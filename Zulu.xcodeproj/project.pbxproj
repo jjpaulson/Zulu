@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F80A2063508A004CF7A0 /* AppDelegate.swift */; };
+		BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F80C2063508A004CF7A0 /* ViewController.swift */; };
+		BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F80E2063508A004CF7A0 /* Main.storyboard */; };
+		BA68F8122063508A004CF7A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA68F8112063508A004CF7A0 /* Assets.xcassets */; };
+		BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */; };
+		BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F81F2063508B004CF7A0 /* ZuluTests.swift */; };
+		BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA68F81C2063508B004CF7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA68F7FF2063508A004CF7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA68F8062063508A004CF7A0;
+			remoteInfo = Zulu;
+		};
+		BA68F8272063508B004CF7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA68F7FF2063508A004CF7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA68F8062063508A004CF7A0;
+			remoteInfo = Zulu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA68F8072063508A004CF7A0 /* Zulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zulu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA68F80A2063508A004CF7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA68F80C2063508A004CF7A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA68F80F2063508A004CF7A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA68F8112063508A004CF7A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA68F8142063508A004CF7A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA68F8162063508A004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA68F81B2063508B004CF7A0 /* ZuluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA68F81F2063508B004CF7A0 /* ZuluTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluTests.swift; sourceTree = "<group>"; };
+		BA68F8212063508B004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuluUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluUITests.swift; sourceTree = "<group>"; };
+		BA68F82C2063508B004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA68F8042063508A004CF7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8182063508B004CF7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8232063508B004CF7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA68F7FE2063508A004CF7A0 = {
+			isa = PBXGroup;
+			children = (
+				BA68F8092063508A004CF7A0 /* Zulu */,
+				BA68F81E2063508B004CF7A0 /* ZuluTests */,
+				BA68F8292063508B004CF7A0 /* ZuluUITests */,
+				BA68F8082063508A004CF7A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA68F8082063508A004CF7A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA68F8072063508A004CF7A0 /* Zulu.app */,
+				BA68F81B2063508B004CF7A0 /* ZuluTests.xctest */,
+				BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA68F8092063508A004CF7A0 /* Zulu */ = {
+			isa = PBXGroup;
+			children = (
+				BA68F80A2063508A004CF7A0 /* AppDelegate.swift */,
+				BA68F80C2063508A004CF7A0 /* ViewController.swift */,
+				BA68F80E2063508A004CF7A0 /* Main.storyboard */,
+				BA68F8112063508A004CF7A0 /* Assets.xcassets */,
+				BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */,
+				BA68F8162063508A004CF7A0 /* Info.plist */,
+			);
+			path = Zulu;
+			sourceTree = "<group>";
+		};
+		BA68F81E2063508B004CF7A0 /* ZuluTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA68F81F2063508B004CF7A0 /* ZuluTests.swift */,
+				BA68F8212063508B004CF7A0 /* Info.plist */,
+			);
+			path = ZuluTests;
+			sourceTree = "<group>";
+		};
+		BA68F8292063508B004CF7A0 /* ZuluUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */,
+				BA68F82C2063508B004CF7A0 /* Info.plist */,
+			);
+			path = ZuluUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA68F8062063508A004CF7A0 /* Zulu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA68F82F2063508B004CF7A0 /* Build configuration list for PBXNativeTarget "Zulu" */;
+			buildPhases = (
+				BA68F8032063508A004CF7A0 /* Sources */,
+				BA68F8042063508A004CF7A0 /* Frameworks */,
+				BA68F8052063508A004CF7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zulu;
+			productName = Zulu;
+			productReference = BA68F8072063508A004CF7A0 /* Zulu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA68F81A2063508B004CF7A0 /* ZuluTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA68F8322063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluTests" */;
+			buildPhases = (
+				BA68F8172063508B004CF7A0 /* Sources */,
+				BA68F8182063508B004CF7A0 /* Frameworks */,
+				BA68F8192063508B004CF7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA68F81D2063508B004CF7A0 /* PBXTargetDependency */,
+			);
+			name = ZuluTests;
+			productName = ZuluTests;
+			productReference = BA68F81B2063508B004CF7A0 /* ZuluTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA68F8252063508B004CF7A0 /* ZuluUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA68F8352063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluUITests" */;
+			buildPhases = (
+				BA68F8222063508B004CF7A0 /* Sources */,
+				BA68F8232063508B004CF7A0 /* Frameworks */,
+				BA68F8242063508B004CF7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA68F8282063508B004CF7A0 /* PBXTargetDependency */,
+			);
+			name = ZuluUITests;
+			productName = ZuluUITests;
+			productReference = BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA68F7FF2063508A004CF7A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Zulu;
+				TargetAttributes = {
+					BA68F8062063508A004CF7A0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BA68F81A2063508B004CF7A0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA68F8062063508A004CF7A0;
+					};
+					BA68F8252063508B004CF7A0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA68F8062063508A004CF7A0;
+					};
+				};
+			};
+			buildConfigurationList = BA68F8022063508A004CF7A0 /* Build configuration list for PBXProject "Zulu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA68F7FE2063508A004CF7A0;
+			productRefGroup = BA68F8082063508A004CF7A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA68F8062063508A004CF7A0 /* Zulu */,
+				BA68F81A2063508B004CF7A0 /* ZuluTests */,
+				BA68F8252063508B004CF7A0 /* ZuluUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA68F8052063508A004CF7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */,
+				BA68F8122063508A004CF7A0 /* Assets.xcassets in Resources */,
+				BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8192063508B004CF7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8242063508B004CF7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA68F8032063508A004CF7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
+				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8172063508B004CF7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA68F8222063508B004CF7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA68F81D2063508B004CF7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA68F8062063508A004CF7A0 /* Zulu */;
+			targetProxy = BA68F81C2063508B004CF7A0 /* PBXContainerItemProxy */;
+		};
+		BA68F8282063508B004CF7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA68F8062063508A004CF7A0 /* Zulu */;
+			targetProxy = BA68F8272063508B004CF7A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA68F80E2063508A004CF7A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA68F80F2063508A004CF7A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA68F8142063508A004CF7A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA68F82D2063508B004CF7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA68F82E2063508B004CF7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA68F8302063508B004CF7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zulu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA68F8312063508B004CF7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Zulu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA68F8332063508B004CF7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZuluTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.ZuluTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zulu.app/Zulu";
+			};
+			name = Debug;
+		};
+		BA68F8342063508B004CF7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZuluTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.ZuluTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zulu.app/Zulu";
+			};
+			name = Release;
+		};
+		BA68F8362063508B004CF7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZuluUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.ZuluUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zulu;
+			};
+			name = Debug;
+		};
+		BA68F8372063508B004CF7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZuluUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.ZuluUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zulu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA68F8022063508A004CF7A0 /* Build configuration list for PBXProject "Zulu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA68F82D2063508B004CF7A0 /* Debug */,
+				BA68F82E2063508B004CF7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA68F82F2063508B004CF7A0 /* Build configuration list for PBXNativeTarget "Zulu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA68F8302063508B004CF7A0 /* Debug */,
+				BA68F8312063508B004CF7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA68F8322063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA68F8332063508B004CF7A0 /* Debug */,
+				BA68F8342063508B004CF7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA68F8352063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA68F8362063508B004CF7A0 /* Debug */,
+				BA68F8372063508B004CF7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA68F7FF2063508A004CF7A0 /* Project object */;
+}
