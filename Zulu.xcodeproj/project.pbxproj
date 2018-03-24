@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063884717933F628327A98F8 /* Pods_Zulu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249C26754AB681668E21A9C6 /* Pods_Zulu.framework */; };
+		1D85493128B9FBEFD6EBB7C8 /* Pods_ZuluTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */; };
+		BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */; };
+		BA30F0B72064A71B00DEDA87 /* AdminScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */; };
+		BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */; };
+		BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */; };
+		BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */; };
+		BA5390AD20655955007713E2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390AC20655955007713E2 /* Item.swift */; };
+		BA5390B120656764007713E2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390B020656764007713E2 /* DataStore.swift */; };
+		BA5390B320656D5D007713E2 /* VirtualCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */; };
+		BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390B420657880007713E2 /* ProductTableViewCell.swift */; };
+		BA5AC401E748A10A5506CFE3 /* Pods_ZuluUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */; };
+		BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67E6DF20643D21000727C8 /* RegisterViewController.swift */; };
+		BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67E6E32064432B000727C8 /* HomeViewController.swift */; };
 		BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F80A2063508A004CF7A0 /* AppDelegate.swift */; };
 		BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F80C2063508A004CF7A0 /* ViewController.swift */; };
 		BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F80E2063508A004CF7A0 /* Main.storyboard */; };
@@ -14,6 +28,10 @@
 		BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */; };
 		BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F81F2063508B004CF7A0 /* ZuluTests.swift */; };
 		BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */; };
+		BAA9317D20645699000F6C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA9317C20645699000F6C28 /* GoogleService-Info.plist */; };
+		BAA9317E20645699000F6C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA9317C20645699000F6C28 /* GoogleService-Info.plist */; };
+		BAA9317F20645699000F6C28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA9317C20645699000F6C28 /* GoogleService-Info.plist */; };
+		BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB645C820640A9B0007D190 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249C26754AB681668E21A9C6 /* Pods_Zulu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zulu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B37B43F6AB27A6CD708B7C5 /* Pods-ZuluUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluUITests/Pods-ZuluUITests.release.xcconfig"; sourceTree = "<group>"; };
+		422B89A9581ED3658A79F89C /* Pods-ZuluTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluTests/Pods-ZuluTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F5DA382FB92AF632BB04687 /* Pods-ZuluUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluUITests/Pods-ZuluUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B17C5547A5FC4B618F0CAF4B /* Pods-ZuluTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluTests/Pods-ZuluTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerScreenViewController.swift; sourceTree = "<group>"; };
+		BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminScreenViewController.swift; sourceTree = "<group>"; };
+		BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrViewController.swift; sourceTree = "<group>"; };
+		BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesViewController.swift; sourceTree = "<group>"; };
+		BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchViewController.swift; sourceTree = "<group>"; };
+		BA5390AC20655955007713E2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BA5390B020656764007713E2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCartTableViewController.swift; sourceTree = "<group>"; };
+		BA5390B420657880007713E2 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		BA67E6DF20643D21000727C8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BA67E6E32064432B000727C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA68F8072063508A004CF7A0 /* Zulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zulu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68F80A2063508A004CF7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA68F80C2063508A004CF7A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +81,12 @@
 		BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuluUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluUITests.swift; sourceTree = "<group>"; };
 		BA68F82C2063508B004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA9317C20645699000F6C28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAB645C820640A9B0007D190 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65273DF0EA2CF09E70D2B59 /* Pods-Zulu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.debug.xcconfig"; sourceTree = "<group>"; };
+		DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063884717933F628327A98F8 /* Pods_Zulu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D85493128B9FBEFD6EBB7C8 /* Pods_ZuluTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5AC401E748A10A5506CFE3 /* Pods_ZuluUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +124,8 @@
 				BA68F81E2063508B004CF7A0 /* ZuluTests */,
 				BA68F8292063508B004CF7A0 /* ZuluUITests */,
 				BA68F8082063508A004CF7A0 /* Products */,
+				D652695B31AC28BB73D73E47 /* Pods */,
+				BD15177A79B3813383021B10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +148,19 @@
 				BA68F8112063508A004CF7A0 /* Assets.xcassets */,
 				BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */,
 				BA68F8162063508A004CF7A0 /* Info.plist */,
+				BAB645C820640A9B0007D190 /* SignInViewController.swift */,
+				BA67E6DF20643D21000727C8 /* RegisterViewController.swift */,
+				BA67E6E32064432B000727C8 /* HomeViewController.swift */,
+				BAA9317C20645699000F6C28 /* GoogleService-Info.plist */,
+				BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */,
+				BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */,
+				BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */,
+				BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */,
+				BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */,
+				BA5390AC20655955007713E2 /* Item.swift */,
+				BA5390B020656764007713E2 /* DataStore.swift */,
+				BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */,
+				BA5390B420657880007713E2 /* ProductTableViewCell.swift */,
 			);
 			path = Zulu;
 			sourceTree = "<group>";
@@ -125,6 +183,29 @@
 			path = ZuluUITests;
 			sourceTree = "<group>";
 		};
+		BD15177A79B3813383021B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				249C26754AB681668E21A9C6 /* Pods_Zulu.framework */,
+				C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */,
+				C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D652695B31AC28BB73D73E47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D65273DF0EA2CF09E70D2B59 /* Pods-Zulu.debug.xcconfig */,
+				DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */,
+				B17C5547A5FC4B618F0CAF4B /* Pods-ZuluTests.debug.xcconfig */,
+				422B89A9581ED3658A79F89C /* Pods-ZuluTests.release.xcconfig */,
+				4F5DA382FB92AF632BB04687 /* Pods-ZuluUITests.debug.xcconfig */,
+				3B37B43F6AB27A6CD708B7C5 /* Pods-ZuluUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA68F82F2063508B004CF7A0 /* Build configuration list for PBXNativeTarget "Zulu" */;
 			buildPhases = (
+				757A427BBABD3A192A13C0F6 /* [CP] Check Pods Manifest.lock */,
 				BA68F8032063508A004CF7A0 /* Sources */,
 				BA68F8042063508A004CF7A0 /* Frameworks */,
 				BA68F8052063508A004CF7A0 /* Resources */,
+				6718E3F04589346D1E4F80EA /* [CP] Embed Pods Frameworks */,
+				F738F3AF8296CF091D17AE16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA68F8322063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluTests" */;
 			buildPhases = (
+				B4125B5FFF8210CAE2350493 /* [CP] Check Pods Manifest.lock */,
 				BA68F8172063508B004CF7A0 /* Sources */,
 				BA68F8182063508B004CF7A0 /* Frameworks */,
 				BA68F8192063508B004CF7A0 /* Resources */,
+				90C195C46FDC8E48B956E63C /* [CP] Embed Pods Frameworks */,
+				8ED9481B2303C3CE0B7F74BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA68F8352063508B004CF7A0 /* Build configuration list for PBXNativeTarget "ZuluUITests" */;
 			buildPhases = (
+				4E010C278AB97A649B7C7A93 /* [CP] Check Pods Manifest.lock */,
 				BA68F8222063508B004CF7A0 /* Sources */,
 				BA68F8232063508B004CF7A0 /* Frameworks */,
 				BA68F8242063508B004CF7A0 /* Resources */,
+				3449B48C281C15228BA3C55E /* [CP] Embed Pods Frameworks */,
+				F5F2188C624A1C1277085671 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */,
+				BAA9317D20645699000F6C28 /* GoogleService-Info.plist in Resources */,
 				BA68F8122063508A004CF7A0 /* Assets.xcassets in Resources */,
 				BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA9317E20645699000F6C28 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,18 +341,204 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA9317F20645699000F6C28 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3449B48C281C15228BA3C55E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuluUITests/Pods-ZuluUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E010C278AB97A649B7C7A93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuluUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6718E3F04589346D1E4F80EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zulu/Pods-Zulu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zulu/Pods-Zulu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757A427BBABD3A192A13C0F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zulu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED9481B2303C3CE0B7F74BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuluTests/Pods-ZuluTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C195C46FDC8E48B956E63C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuluTests/Pods-ZuluTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4125B5FFF8210CAE2350493 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZuluTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F2188C624A1C1277085671 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZuluUITests/Pods-ZuluUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F738F3AF8296CF091D17AE16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zulu/Pods-Zulu-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zulu/Pods-Zulu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA68F8032063508A004CF7A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5390B320656D5D007713E2 /* VirtualCartTableViewController.swift in Sources */,
+				BA5390B120656764007713E2 /* DataStore.swift in Sources */,
+				BA30F0B72064A71B00DEDA87 /* AdminScreenViewController.swift in Sources */,
+				BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */,
+				BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */,
+				BA5390AD20655955007713E2 /* Item.swift in Sources */,
+				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
+				BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */,
+				BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */,
+				BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */,
+				BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */,
+				BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +702,11 @@
 		};
 		BA68F8302063508B004CF7A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65273DF0EA2CF09E70D2B59 /* Pods-Zulu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5447J72Z29;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
@@ -438,9 +718,11 @@
 		};
 		BA68F8312063508B004CF7A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5447J72Z29;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
@@ -452,6 +734,7 @@
 		};
 		BA68F8332063508B004CF7A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17C5547A5FC4B618F0CAF4B /* Pods-ZuluTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +751,7 @@
 		};
 		BA68F8342063508B004CF7A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422B89A9581ED3658A79F89C /* Pods-ZuluTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +768,7 @@
 		};
 		BA68F8362063508B004CF7A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5DA382FB92AF632BB04687 /* Pods-ZuluUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +784,7 @@
 		};
 		BA68F8372063508B004CF7A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B37B43F6AB27A6CD708B7C5 /* Pods-ZuluUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
