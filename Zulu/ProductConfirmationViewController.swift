@@ -9,6 +9,7 @@
 import UIKit
 
 class ProductConfirmationViewController: UIViewController {
+    var store = DataStore.sharedInstance
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
@@ -17,6 +18,7 @@ class ProductConfirmationViewController: UIViewController {
         super.viewDidLoad()
         
         productNameLabel.text = store.productToAdd.initName
+        productPriceLabel.text = "$\(store.productToAdd.initPrice)"
         // Do any additional setup after loading the view.
     }
 
@@ -25,7 +27,11 @@ class ProductConfirmationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func addToCartButtonTapped(_ sender: Any) {
+        self.saveData(item: store.productToAdd)
+        performSegue(withIdentifier: "GoBackHome", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -35,5 +41,12 @@ class ProductConfirmationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    private func saveData(item: Item){
+        self.store.Items.append(item)
+        
+        //NSKeyedArchiver is going to look through every Item class and list and look for encode function and is going to encode our data and save it
+        
+        //archiveRootObject saves our array of items to our filepath url
+        NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
+    }
 }

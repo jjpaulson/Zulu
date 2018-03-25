@@ -13,8 +13,6 @@
 		30E7EB352066D75C00B6552A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E7EB332066D75C00B6552A /* GoogleService-Info.plist */; };
 		30E7EB362066D75C00B6552A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E7EB332066D75C00B6552A /* GoogleService-Info.plist */; };
 		30E7EB382066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */; };
-		30E7EB392066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */; };
-		30E7EB3A2066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */; };
 		BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */; };
 		BA30F0B72064A71B00DEDA87 /* AdminScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */; };
 		BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */; };
@@ -553,7 +551,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */,
-				30E7EB392066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +559,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */,
-				30E7EB3A2066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
     var store = DataStore.sharedInstance
     
     var captureSession = AVCaptureSession()
@@ -19,7 +20,12 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.qr]
     
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var namingTextField: UITextField!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        captureSession.startRunning()
+        qrCodeFrameView?.frame = CGRect.zero
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,10 +88,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             view.addSubview(qrCodeFrameView)
             view.bringSubview(toFront: qrCodeFrameView)
         }
-        
-        
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -97,32 +101,6 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func submitButtonTapped(_ sender: Any) {
-        if namingTextField.text != "" {
-            if let unwrappedText = namingTextField.text {
-                switch unwrappedText {
-                case "Item1":
-                    let newItem = Item(name: unwrappedText, price: 2.75)
-                    self.saveData(item: newItem)
-                case "Item2":
-                    let newItem = Item(name: unwrappedText, price: 3.75)
-                    self.saveData(item: newItem)
-                case "Item3":
-                    let newItem = Item(name: unwrappedText, price: 4.75)
-                    self.saveData(item: newItem)
-                case "Item4":
-                    let newItem = Item(name: unwrappedText, price: 5.75)
-                    self.saveData(item: newItem)
-                case "Item5":
-                    let newItem = Item(name: unwrappedText, price: 6.75)
-                    self.saveData(item: newItem)
-                default:
-                    let newItem = Item(name: unwrappedText, price: 9.99)
-                    self.saveData(item: newItem)
-                }
-            }
-        }
-    }
     
     /*
     var filePath : String {
@@ -156,6 +134,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         }
     }
     
+    var segueFlag = false
+    
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects.count == 0 {
@@ -176,10 +156,14 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 messageLabel.text = metadataObj.stringValue
                 if messageLabel.text == store.Products[messageLabel.text!]?.initName
                 {
-                    store.productToAdd = store.Products[messageLabel.text!]
-                    performSegue(withIdentifier: "GoToConfirmation", sender: self)
+                    store.productToAdd = store.Products[messageLabel.text!]!
+                    segueFlag = true
                 }
             }
+        }
+        if segueFlag {
+            performSegue(withIdentifier: "GoToConfirmation", sender: self)
+            captureSession.stopRunning()
         }
     }
 

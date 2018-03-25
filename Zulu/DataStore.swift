@@ -11,6 +11,7 @@ import UIKit
 
 class DataStore {
     static let sharedInstance = DataStore()
+    
     private init() {}
     var Items : [Item] = []
     var Products : [String : Item] = [
@@ -21,7 +22,7 @@ class DataStore {
         "Celery" : Item(name: "Celery", price: 9.99),
     ]
     
-    var productToAdd : Item? = Item(name: "", price: 0.0)
+    var productToAdd : Item = Item(name: "", price: 0.0)
     
     var filePath : String {
         //Manager lets you examine contents of files and folders in your app; creates a directory to where we are saving it

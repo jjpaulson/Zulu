@@ -19,11 +19,6 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         //ref = Database.database().reference()
-        store.Products.append(store.product1)
-        store.Products.append(store.product2)
-        store.Products.append(store.product3)
-        store.Products.append(store.product4)
-        store.Products.append(store.product5)
     }
 
     override func didReceiveMemoryWarning() {
