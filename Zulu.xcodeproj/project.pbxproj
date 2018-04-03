@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		063884717933F628327A98F8 /* Pods_Zulu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249C26754AB681668E21A9C6 /* Pods_Zulu.framework */; };
 		1D85493128B9FBEFD6EBB7C8 /* Pods_ZuluTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */; };
-		30E7EB342066D75C00B6552A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E7EB332066D75C00B6552A /* GoogleService-Info.plist */; };
-		30E7EB352066D75C00B6552A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E7EB332066D75C00B6552A /* GoogleService-Info.plist */; };
-		30E7EB362066D75C00B6552A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E7EB332066D75C00B6552A /* GoogleService-Info.plist */; };
 		30E7EB382066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */; };
 		BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */; };
 		BA30F0B72064A71B00DEDA87 /* AdminScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */; };
@@ -32,6 +29,14 @@
 		BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */; };
 		BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F81F2063508B004CF7A0 /* ZuluTests.swift */; };
 		BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */; };
+		BA9D00D5206ED07D006513E0 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */; };
+		BA9D00D9206ED457006513E0 /* LocationDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */; };
+		BA9D00DB206ED478006513E0 /* SearchInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */; };
+		BA9D00DD206ED7DA006513E0 /* FavStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */; };
+		BA9D00DF206EEEC1006513E0 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */; };
+		BAA8631E2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
+		BAA8631F2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
+		BAA863202068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
 		BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB645C820640A9B0007D190 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +59,6 @@
 
 /* Begin PBXFileReference section */
 		249C26754AB681668E21A9C6 /* Pods_Zulu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zulu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30E7EB332066D75C00B6552A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConfirmationViewController.swift; sourceTree = "<group>"; };
 		3B37B43F6AB27A6CD708B7C5 /* Pods-ZuluUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluUITests/Pods-ZuluUITests.release.xcconfig"; sourceTree = "<group>"; };
 		422B89A9581ED3658A79F89C /* Pods-ZuluTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZuluTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZuluTests/Pods-ZuluTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +88,12 @@
 		BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuluUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluUITests.swift; sourceTree = "<group>"; };
 		BA68F82C2063508B004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDescriptionViewController.swift; sourceTree = "<group>"; };
+		BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInventoryViewController.swift; sourceTree = "<group>"; };
+		BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavStoreTableViewController.swift; sourceTree = "<group>"; };
+		BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAB645C820640A9B0007D190 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +163,7 @@
 				BAB645C820640A9B0007D190 /* SignInViewController.swift */,
 				BA67E6DF20643D21000727C8 /* RegisterViewController.swift */,
 				BA67E6E32064432B000727C8 /* HomeViewController.swift */,
-				30E7EB332066D75C00B6552A /* GoogleService-Info.plist */,
+				BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */,
 				BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */,
 				BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */,
 				BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */,
@@ -164,6 +174,11 @@
 				BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */,
 				BA5390B420657880007713E2 /* ProductTableViewCell.swift */,
 				30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */,
+				BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */,
+				BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */,
+				BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */,
+				BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */,
+				BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */,
 			);
 			path = Zulu;
 			sourceTree = "<group>";
@@ -326,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */,
-				30E7EB342066D75C00B6552A /* GoogleService-Info.plist in Resources */,
+				BAA8631E2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
 				BA68F8122063508A004CF7A0 /* Assets.xcassets in Resources */,
 				BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */,
 			);
@@ -336,7 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E7EB352066D75C00B6552A /* GoogleService-Info.plist in Resources */,
+				BAA8631F2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E7EB362066D75C00B6552A /* GoogleService-Info.plist in Resources */,
+				BAA863202068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,15 +549,20 @@
 				BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */,
 				30E7EB382066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */,
 				BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */,
+				BA9D00DF206EEEC1006513E0 /* LocationTableViewCell.swift in Sources */,
+				BA9D00D9206ED457006513E0 /* LocationDescriptionViewController.swift in Sources */,
 				BA5390AD20655955007713E2 /* Item.swift in Sources */,
+				BA9D00D5206ED07D006513E0 /* SearchLocationViewController.swift in Sources */,
 				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
 				BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */,
+				BA9D00DB206ED478006513E0 /* SearchInventoryViewController.swift in Sources */,
 				BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */,
 				BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */,
 				BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */,
 				BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */,
+				BA9D00DD206ED7DA006513E0 /* FavStoreTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
