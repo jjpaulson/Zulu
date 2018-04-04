@@ -1,5 +1,5 @@
 //
-//  StoreSearchViewController.swift
+//  PreviousPurchasesViewController.swift
 //  Zulu
 //
 //  Created by Jonathan Paulson on 3/23/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoreSearchViewController: UIViewController {
+class PreviousPurchasesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class StoreSearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
 

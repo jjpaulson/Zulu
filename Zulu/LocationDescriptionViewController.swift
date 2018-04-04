@@ -1,14 +1,14 @@
 //
-//  StoreSearchViewController.swift
+//  LocationDescriptionViewController.swift
 //  Zulu
 //
-//  Created by Jonathan Paulson on 3/23/18.
+//  Created by Jonathan Paulson on 3/30/18.
 //  Copyright © 2018 Zulu. All rights reserved.
 //
 
 import UIKit
 
-class StoreSearchViewController: UIViewController {
+class LocationDescriptionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,7 @@ class StoreSearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
     /*
     // MARK: - Navigation
 

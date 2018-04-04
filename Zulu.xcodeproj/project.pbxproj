@@ -15,6 +15,12 @@
 		BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */; };
 		BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */; };
 		BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */; };
+		BA457F53207470800036FBEA /* PreviousPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */; };
+		BA457F54207470800036FBEA /* SearchInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */; };
+		BA457F55207470800036FBEA /* FavStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */; };
+		BA457F56207470800036FBEA /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F502074707F0036FBEA /* LocationTableViewCell.swift */; };
+		BA457F57207470800036FBEA /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F512074707F0036FBEA /* SearchLocationViewController.swift */; };
+		BA457F58207470800036FBEA /* LocationDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F52207470800036FBEA /* LocationDescriptionViewController.swift */; };
 		BA5390AD20655955007713E2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390AC20655955007713E2 /* Item.swift */; };
 		BA5390B120656764007713E2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390B020656764007713E2 /* DataStore.swift */; };
 		BA5390B320656D5D007713E2 /* VirtualCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */; };
@@ -67,6 +73,12 @@
 		BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrViewController.swift; sourceTree = "<group>"; };
 		BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesViewController.swift; sourceTree = "<group>"; };
 		BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchViewController.swift; sourceTree = "<group>"; };
+		BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesViewController.swift; sourceTree = "<group>"; };
+		BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInventoryViewController.swift; sourceTree = "<group>"; };
+		BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavStoreTableViewController.swift; sourceTree = "<group>"; };
+		BA457F502074707F0036FBEA /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		BA457F512074707F0036FBEA /* SearchLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		BA457F52207470800036FBEA /* LocationDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDescriptionViewController.swift; sourceTree = "<group>"; };
 		BA5390AC20655955007713E2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA5390B020656764007713E2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCartTableViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +164,12 @@
 		BA68F8092063508A004CF7A0 /* Zulu */ = {
 			isa = PBXGroup;
 			children = (
+				BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */,
+				BA457F52207470800036FBEA /* LocationDescriptionViewController.swift */,
+				BA457F502074707F0036FBEA /* LocationTableViewCell.swift */,
+				BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */,
+				BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */,
+				BA457F512074707F0036FBEA /* SearchLocationViewController.swift */,
 				F0B8B67A20733AB700601F86 /* PastPurchases */,
 				BA68F80A2063508A004CF7A0 /* AppDelegate.swift */,
 				BA68F80C2063508A004CF7A0 /* ViewController.swift */,
@@ -547,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA457F58207470800036FBEA /* LocationDescriptionViewController.swift in Sources */,
 				BA5390B320656D5D007713E2 /* VirtualCartTableViewController.swift in Sources */,
 				F0B8B67C20733D7000601F86 /* PreviousPurchasesCell.swift in Sources */,
 				BA5390B120656764007713E2 /* DataStore.swift in Sources */,
@@ -554,17 +573,22 @@
 				F0BCBC8B20731BE200C25347 /* ReceiptViewController.swift in Sources */,
 				BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */,
 				30E7EB382066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */,
+				BA457F55207470800036FBEA /* FavStoreTableViewController.swift in Sources */,
 				BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */,
 				F0DA30612073025F00643436 /* PayViewController.swift in Sources */,
 				BA5390AD20655955007713E2 /* Item.swift in Sources */,
 				F0B8B67E20733F5300601F86 /* ReceiptsTableViewController.swift in Sources */,
+				BA457F57207470800036FBEA /* SearchLocationViewController.swift in Sources */,
 				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
 				BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */,
+				BA457F54207470800036FBEA /* SearchInventoryViewController.swift in Sources */,
 				BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */,
+				BA457F56207470800036FBEA /* LocationTableViewCell.swift in Sources */,
 				F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */,
 				BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */,
+				BA457F53207470800036FBEA /* PreviousPurchasesViewController.swift in Sources */,
 				BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */,
 				BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */,
 			);
@@ -734,10 +758,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7BP95N96D;
+				DEVELOPMENT_TEAM = 5447J72Z29;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu.zulu;
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -750,10 +774,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7BP95N96D;
+				DEVELOPMENT_TEAM = 5447J72Z29;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu.zulu;
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
