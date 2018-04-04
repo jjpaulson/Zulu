@@ -1091,7 +1091,6 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancelButtonTapped:" destination="1I8-nB-gdQ" eventType="touchUpInside" id="de3-Jm-H5o"/>
                                     <segue destination="hAh-Yd-gZU" kind="show" id="1aL-VZ-mdi"/>
                                 </connections>
                             </button>
@@ -1103,7 +1102,6 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpButtonTapped:" destination="1I8-nB-gdQ" eventType="touchUpInside" id="OY6-mp-TL4"/>
                                     <segue destination="EXD-Nx-LEC" kind="show" id="zUH-Ot-gDQ"/>
                                 </connections>
                             </button>
@@ -1230,7 +1228,6 @@
                                     <color key="titleColor" red="1" green="0.97978015699999998" blue="0.99552412140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonTapped:" destination="hAh-Yd-gZU" eventType="touchUpInside" id="U71-kf-ETp"/>
                                     <segue destination="1I8-nB-gdQ" kind="show" id="1hK-9t-RC4"/>
                                 </connections>
                             </button>
@@ -1242,7 +1239,6 @@
                                     <color key="titleColor" red="1" green="0.97978015699999998" blue="0.99552412140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="signInButtonTapped:" destination="hAh-Yd-gZU" eventType="touchUpInside" id="5SJ-4p-Y9m"/>
                                     <segue destination="EXD-Nx-LEC" kind="show" id="S1S-ca-eDU"/>
                                 </connections>
                             </button>
@@ -1297,7 +1293,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zvh-Hj-H0o"/>
-        <segue reference="S1S-ca-eDU"/>
+        <segue reference="zUH-Ot-gDQ"/>
         <segue reference="P46-Sb-8LV"/>
         <segue reference="Aw5-IS-aDU"/>
         <segue reference="d0T-dE-j4T"/>

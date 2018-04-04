@@ -15,7 +15,6 @@
 		BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */; };
 		BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */; };
 		BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */; };
-		BA457F53207470800036FBEA /* PreviousPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */; };
 		BA457F54207470800036FBEA /* SearchInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */; };
 		BA457F55207470800036FBEA /* FavStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */; };
 		BA457F56207470800036FBEA /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA457F502074707F0036FBEA /* LocationTableViewCell.swift */; };
@@ -73,7 +72,6 @@
 		BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrViewController.swift; sourceTree = "<group>"; };
 		BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesViewController.swift; sourceTree = "<group>"; };
 		BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchViewController.swift; sourceTree = "<group>"; };
-		BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesViewController.swift; sourceTree = "<group>"; };
 		BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInventoryViewController.swift; sourceTree = "<group>"; };
 		BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavStoreTableViewController.swift; sourceTree = "<group>"; };
 		BA457F502074707F0036FBEA /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 				BA457F4F2074707F0036FBEA /* FavStoreTableViewController.swift */,
 				BA457F52207470800036FBEA /* LocationDescriptionViewController.swift */,
 				BA457F502074707F0036FBEA /* LocationTableViewCell.swift */,
-				BA457F4D2074707E0036FBEA /* PreviousPurchasesViewController.swift */,
 				BA457F4E2074707F0036FBEA /* SearchInventoryViewController.swift */,
 				BA457F512074707F0036FBEA /* SearchLocationViewController.swift */,
 				F0B8B67A20733AB700601F86 /* PastPurchases */,
@@ -588,7 +585,6 @@
 				BA457F56207470800036FBEA /* LocationTableViewCell.swift in Sources */,
 				F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */,
 				BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */,
-				BA457F53207470800036FBEA /* PreviousPurchasesViewController.swift in Sources */,
 				BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */,
 				BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */,
 			);
