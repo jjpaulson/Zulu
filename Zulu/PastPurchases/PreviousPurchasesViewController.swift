@@ -1,18 +1,19 @@
 //
-//  SearchLocationViewController.swift
+//  PreviousPurchasesViewController.swift
 //  Zulu
 //
-//  Created by Jonathan Paulson on 3/30/18.
+//  Created by Jonathan Paulson on 3/23/18.
 //  Copyright © 2018 Zulu. All rights reserved.
 //
 
 import UIKit
 
-class SearchLocationViewController: UIViewController {
+class PreviousPurchasesViewController: UIViewController {
 
+    @IBOutlet weak var ChildTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

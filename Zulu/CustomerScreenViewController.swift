@@ -20,7 +20,17 @@ class CustomerScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
+    @IBAction func VirtualCartButton(_ sender: Any) {
+        print("Segue2")
+        performSegue(withIdentifier: "VirtualCart", sender: nil)
+    }
+    
+    @IBAction func CheckoutButton(_ sender: Any) {
+        print("Segue")
+        performSegue(withIdentifier: "Checkout", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

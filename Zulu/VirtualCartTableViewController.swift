@@ -14,25 +14,53 @@ class VirtualCartTableViewController: UITableViewController {
     //MARK Properties
     
     var store = DataStore.sharedInstance
+    var test: CartOverViewController? = nil
     
     @IBOutlet var myTableView: UITableView!
-    @IBOutlet weak var totalPriceLabel: UILabel!
     
     private func loadData() {
-        //If we can get our data back from our archives, get our data along our filepath and cast it as an array of Items
-        
+        var items : [Item] = []
         if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: store.filePath) as? [Item] {
-            self.store.Items = ourData
+            items = ourData
+            print("SUCCESSFUL LOAD")
+        } else {
+            print("FAILED LOAD")
         }
+        var quantities : [Int] = []
+        if let ourData2 = NSKeyedUnarchiver.unarchiveObject(withFile: store.filePath2) as? [Int] {
+            quantities = ourData2
+            print("SUCCESSFUL LOAD")
+        } else {
+            print("FAILED LOAD")
+        }
+        
+        self.store.ItemsDict = [Item : Int]()
+        for i in 0 ... (items.count - 1) {
+            var found : Bool = false
+            for item in self.store.ItemsDict.keys {
+                if item.initName == items[i].initName {
+                    self.store.ItemsDict[item] =
+                        self.store.ItemsDict[item]! + quantities[i]
+                    found = true
+                }
+            }
+            if !found {
+                self.store.ItemsDict[items[i]] = quantities[i]
+            }
+        }
+        
+        print(self.store.ItemsDict)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = editButtonItem
         
-        loadData()
+        //loadData()
         
-        totalPriceLabel.text = "$\(totalCostOfItems())"
+        print(self.store.ItemsDict)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -58,7 +86,17 @@ class VirtualCartTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.store.Items.count
+        //return self.store.Items.count
+        //Test
+        
+        if test != nil {
+            return self.store.ItemsDict.count
+        } else {
+            if self.store.selectedReceipt == nil {
+                return 0
+            }
+            return self.store.PreviousPerchases[self.store.selectedReceipt!]!.count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,10 +107,35 @@ class VirtualCartTableViewController: UITableViewController {
             fatalError("The deqeued cell is not an instance of ProductTableViewCell")
         }
         
-        let newItem = self.store.Items[indexPath.row]
-        
+//        let newItem = self.store.Items[indexPath.row]
+//
+//        cell.productNameLabel.text = newItem.initName
+//        //Test
+//        let priceString = String.localizedStringWithFormat("%.2f", newItem.initPrice)
+//        //cell.productPriceLabel.text = "$\(newItem.initPrice)"
+//        cell.productPriceLabel.text = "$" + priceString
+//        //Test
+//        cell.productImageView.image = UIImage(named: newItem.initPhotoStr)
+        //Test
+        var newItem : Item
+        var quantity : Int
+        if test != nil {
+            newItem = Array(self.store.ItemsDict)[indexPath.row].key
+            quantity = Array(self.store.ItemsDict)[indexPath.row].value
+        } else {
+            let itemsDict = self.store.PreviousPerchases[self.store.selectedReceipt!]!
+            newItem = Array(itemsDict)[indexPath.row].key
+            quantity = Array(itemsDict)[indexPath.row].value
+        }
         cell.productNameLabel.text = newItem.initName
-        cell.productPriceLabel.text = "$\(newItem.initPrice)"
+        //Test
+        let priceString = String.localizedStringWithFormat("%.2f", newItem.initPrice)
+        //cell.productPriceLabel.text = "$\(newItem.initPrice)"
+        cell.productPriceLabel.text = "$" + priceString
+        //Test
+        cell.productImageView.image = UIImage(named: newItem.initPhotoStr)
+        cell.productQuantityLabel.text = "Quantity: \(quantity)"
+
         return cell
     }
 
@@ -98,17 +161,27 @@ class VirtualCartTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            if test == nil {
+                return
+            }
             // Delete the row from the data source
-            self.store.Items.remove(at: indexPath.row)
+            //self.store.Items.remove(at: indexPath.row)
+            //Test
+            let indexString = Array(self.store.ItemsDict.keys)[indexPath.row]
+            self.store.ItemsDict[indexString] = nil
             tableView.deleteRows(at: [indexPath], with: .fade)
             saveItems()
-            totalPriceLabel.text = "$\(totalCostOfItems())"
+            
+            if test != nil {
+                test?.setTotalPrice()
+            }
+//            overview.update(CartOverViewController())
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-
-
+    
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -135,21 +208,20 @@ class VirtualCartTableViewController: UITableViewController {
     */
 
     private func saveItems() {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
+        //let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
+        //Test
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.keys), toFile: store.filePath)
+        
+        NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.values), toFile: store.filePath2)
         
         if isSuccessfulSave {
             os_log("Items successfully saved", log: OSLog.default, type: .debug)
+            print("Successful Save")
         }
         else {
             os_log("Failed to save items...", log: OSLog.default, type: .error)
+            print("Failed Save")
         }
     }
-    
-    func totalCostOfItems() -> Float {
-        var totalPrice : Float = 0.0
-        for Item in self.store.Items {
-            totalPrice += Item.initPrice
-        }
-        return totalPrice
-    }
+
 }

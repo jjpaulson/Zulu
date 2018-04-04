@@ -29,7 +29,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        //Change
+        //loadData()
         
         // Do any additional setup after loading the view.
         var deviceDiscoverySession : AVCaptureDevice.DiscoverySession
@@ -93,7 +94,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        loadData()
+        //Change
+        //loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -117,22 +119,23 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         return (url!.appendingPathComponent("Data").path)
     }
     */
-    private func saveData(item: Item){
-        self.store.Items.append(item)
-        
-        //NSKeyedArchiver is going to look through every Item class and list and look for encode function and is going to encode our data and save it
-        
-        //archiveRootObject saves our array of items to our filepath url
-        NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
-    }
-    
-    private func loadData() {
-        //If we can get our data back from our archives, get our data along our filepath and cast it as an array of Items
-        
-        if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: store.filePath) as? [Item] {
-            self.store.Items = ourData
-        }
-    }
+    //CHANGE
+//    private func saveData(item: Item){
+//        self.store.Items.append(item)
+//
+//        //NSKeyedArchiver is going to look through every Item class and list and look for encode function and is going to encode our data and save it
+//
+//        //archiveRootObject saves our array of items to our filepath url
+//        NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
+//    }
+//
+//    private func loadData() {
+//        //If we can get our data back from our archives, get our data along our filepath and cast it as an array of Items
+//
+//        if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: store.filePath) as? [Item] {
+//            self.store.Items = ourData
+//        }
+//    }
     
     var segueFlag = false
     

@@ -29,15 +29,13 @@
 		BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA68F8132063508A004CF7A0 /* LaunchScreen.storyboard */; };
 		BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F81F2063508B004CF7A0 /* ZuluTests.swift */; };
 		BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */; };
-		BA9D00D5206ED07D006513E0 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */; };
-		BA9D00D9206ED457006513E0 /* LocationDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */; };
-		BA9D00DB206ED478006513E0 /* SearchInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */; };
-		BA9D00DD206ED7DA006513E0 /* FavStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */; };
-		BA9D00DF206EEEC1006513E0 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */; };
-		BAA8631E2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
-		BAA8631F2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
-		BAA863202068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */; };
 		BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB645C820640A9B0007D190 /* SignInViewController.swift */; };
+		F03C1EA9206FF1210026B634 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */; };
+		F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C1EAA207080380026B634 /* CartOverViewController.swift */; };
+		F0B8B67C20733D7000601F86 /* PreviousPurchasesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B67B20733D7000601F86 /* PreviousPurchasesCell.swift */; };
+		F0B8B67E20733F5300601F86 /* ReceiptsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8B67D20733F5300601F86 /* ReceiptsTableViewController.swift */; };
+		F0BCBC8B20731BE200C25347 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BCBC8A20731BE200C25347 /* ReceiptViewController.swift */; };
+		F0DA30612073025F00643436 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DA30602073025F00643436 /* PayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,17 +86,17 @@
 		BA68F8262063508B004CF7A0 /* ZuluUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuluUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuluUITests.swift; sourceTree = "<group>"; };
 		BA68F82C2063508B004CF7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
-		BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDescriptionViewController.swift; sourceTree = "<group>"; };
-		BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInventoryViewController.swift; sourceTree = "<group>"; };
-		BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavStoreTableViewController.swift; sourceTree = "<group>"; };
-		BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
-		BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAB645C820640A9B0007D190 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C4C80EF487F8F9B03AC9025D /* Pods_ZuluTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65273DF0EA2CF09E70D2B59 /* Pods-Zulu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.debug.xcconfig"; sourceTree = "<group>"; };
 		DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.release.xcconfig"; sourceTree = "<group>"; };
+		F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F03C1EAA207080380026B634 /* CartOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartOverViewController.swift; sourceTree = "<group>"; };
+		F0B8B67B20733D7000601F86 /* PreviousPurchasesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousPurchasesCell.swift; sourceTree = "<group>"; };
+		F0B8B67D20733F5300601F86 /* ReceiptsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsTableViewController.swift; sourceTree = "<group>"; };
+		F0BCBC8A20731BE200C25347 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		F0DA30602073025F00643436 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +152,7 @@
 		BA68F8092063508A004CF7A0 /* Zulu */ = {
 			isa = PBXGroup;
 			children = (
+				F0B8B67A20733AB700601F86 /* PastPurchases */,
 				BA68F80A2063508A004CF7A0 /* AppDelegate.swift */,
 				BA68F80C2063508A004CF7A0 /* ViewController.swift */,
 				BA68F80E2063508A004CF7A0 /* Main.storyboard */,
@@ -163,22 +162,19 @@
 				BAB645C820640A9B0007D190 /* SignInViewController.swift */,
 				BA67E6DF20643D21000727C8 /* RegisterViewController.swift */,
 				BA67E6E32064432B000727C8 /* HomeViewController.swift */,
-				BAA8631D2068A8E100BD5BC6 /* GoogleService-Info.plist */,
+				F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */,
 				BA30F0B42064A6CB00DEDA87 /* CustomerScreenViewController.swift */,
 				BA30F0B62064A71B00DEDA87 /* AdminScreenViewController.swift */,
 				BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */,
-				BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */,
 				BA30F0BE2064C17200DEDA87 /* StoreSearchViewController.swift */,
 				BA5390AC20655955007713E2 /* Item.swift */,
 				BA5390B020656764007713E2 /* DataStore.swift */,
 				BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */,
 				BA5390B420657880007713E2 /* ProductTableViewCell.swift */,
 				30E7EB372066E3D200B6552A /* ProductConfirmationViewController.swift */,
-				BA9D00D4206ED07D006513E0 /* SearchLocationViewController.swift */,
-				BA9D00D8206ED457006513E0 /* LocationDescriptionViewController.swift */,
-				BA9D00DA206ED478006513E0 /* SearchInventoryViewController.swift */,
-				BA9D00DC206ED7DA006513E0 /* FavStoreTableViewController.swift */,
-				BA9D00DE206EEEC1006513E0 /* LocationTableViewCell.swift */,
+				F03C1EAA207080380026B634 /* CartOverViewController.swift */,
+				F0DA30602073025F00643436 /* PayViewController.swift */,
+				F0BCBC8A20731BE200C25347 /* ReceiptViewController.swift */,
 			);
 			path = Zulu;
 			sourceTree = "<group>";
@@ -222,6 +218,16 @@
 				3B37B43F6AB27A6CD708B7C5 /* Pods-ZuluUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0B8B67A20733AB700601F86 /* PastPurchases */ = {
+			isa = PBXGroup;
+			children = (
+				BA30F0BC2064C16600DEDA87 /* PreviousPurchasesViewController.swift */,
+				F0B8B67B20733D7000601F86 /* PreviousPurchasesCell.swift */,
+				F0B8B67D20733F5300601F86 /* ReceiptsTableViewController.swift */,
+			);
+			path = PastPurchases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA68F8152063508A004CF7A0 /* LaunchScreen.storyboard in Resources */,
-				BAA8631E2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
+				F03C1EA9206FF1210026B634 /* GoogleService-Info.plist in Resources */,
 				BA68F8122063508A004CF7A0 /* Assets.xcassets in Resources */,
 				BA68F8102063508A004CF7A0 /* Main.storyboard in Resources */,
 			);
@@ -351,7 +357,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA8631F2068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA863202068A8E100BD5BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,25 +548,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5390B320656D5D007713E2 /* VirtualCartTableViewController.swift in Sources */,
+				F0B8B67C20733D7000601F86 /* PreviousPurchasesCell.swift in Sources */,
 				BA5390B120656764007713E2 /* DataStore.swift in Sources */,
 				BA30F0B72064A71B00DEDA87 /* AdminScreenViewController.swift in Sources */,
+				F0BCBC8B20731BE200C25347 /* ReceiptViewController.swift in Sources */,
 				BA30F0B52064A6CB00DEDA87 /* CustomerScreenViewController.swift in Sources */,
 				30E7EB382066E3D200B6552A /* ProductConfirmationViewController.swift in Sources */,
 				BA30F0BD2064C16600DEDA87 /* PreviousPurchasesViewController.swift in Sources */,
-				BA9D00DF206EEEC1006513E0 /* LocationTableViewCell.swift in Sources */,
-				BA9D00D9206ED457006513E0 /* LocationDescriptionViewController.swift in Sources */,
+				F0DA30612073025F00643436 /* PayViewController.swift in Sources */,
 				BA5390AD20655955007713E2 /* Item.swift in Sources */,
-				BA9D00D5206ED07D006513E0 /* SearchLocationViewController.swift in Sources */,
+				F0B8B67E20733F5300601F86 /* ReceiptsTableViewController.swift in Sources */,
 				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
 				BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */,
-				BA9D00DB206ED478006513E0 /* SearchInventoryViewController.swift in Sources */,
 				BA30F0BF2064C17200DEDA87 /* StoreSearchViewController.swift in Sources */,
+				F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */,
 				BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */,
 				BA67E6E020643D21000727C8 /* RegisterViewController.swift in Sources */,
 				BA30F0BB2064C15900DEDA87 /* ZephyrViewController.swift in Sources */,
-				BA9D00DD206ED7DA006513E0 /* FavStoreTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,10 +734,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5447J72Z29;
+				DEVELOPMENT_TEAM = J7BP95N96D;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu.zulu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -746,10 +750,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5447J72Z29;
+				DEVELOPMENT_TEAM = J7BP95N96D;
 				INFOPLIST_FILE = Zulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu;
+				PRODUCT_BUNDLE_IDENTIFIER = Zulu.Zulu.zulu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

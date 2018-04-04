@@ -13,12 +13,21 @@ class ProductConfirmationViewController: UIViewController {
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
+    //Test
+    @IBOutlet weak var productImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         productNameLabel.text = store.productToAdd.initName
-        productPriceLabel.text = "$\(store.productToAdd.initPrice)"
+        //Test
+        let priceString = String.localizedStringWithFormat("%.2f", store.productToAdd.initPrice)
+        //productPriceLabel.text = "$\(store.productToAdd.initPrice)"
+        productPriceLabel.text = "$" + priceString
+        //Test
+        productImageView.image =
+            UIImage(named: store.productToAdd.initPhotoStr)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -43,10 +52,24 @@ class ProductConfirmationViewController: UIViewController {
     */
     private func saveData(item: Item){
         self.store.Items.append(item)
+        //Test
+        
+        var found : Bool = false
+        for dictItem in self.store.ItemsDict.keys {
+            if dictItem.initName == item.initName {
+                self.store.ItemsDict[dictItem] = self.store.ItemsDict[dictItem]! + 1
+                found = true
+            }
+        }
+        if !found {
+            self.store.ItemsDict[item] = 1
+        }
         
         //NSKeyedArchiver is going to look through every Item class and list and look for encode function and is going to encode our data and save it
         
         //archiveRootObject saves our array of items to our filepath url
-        NSKeyedArchiver.archiveRootObject(self.store.Items, toFile: store.filePath)
+        //Test changed Items -> ItemsDict
+        NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.keys), toFile: store.filePath)
+        NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.values), toFile: store.filePath2)
     }
 }
