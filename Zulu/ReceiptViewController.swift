@@ -14,14 +14,14 @@ class ReceiptViewController: UIViewController {
     var store = DataStore.sharedInstance
     @IBOutlet weak var totalPriceLabel: UILabel!
     @IBOutlet weak var ChildTableView: UIView!
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var HomeNavButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(store.selectedReceipt)
         if store.selectedReceipt != nil {
             setTotalPrice(date: store.selectedReceipt!)
-            dateLabel.text = store.selectedReceipt
+//            dateLabel.text = store.selectedReceipt
         }
         (self.childViewControllers[0] as! VirtualCartTableViewController).test = nil
         

@@ -16,12 +16,32 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.tintColor = UIColor.black;
         loadData()
-        //saveTestData()
+        loadTestData()
         
         // Do any additional setup after loading the view.
         //ref = Database.database().reference()
+    }
+    
+    private func loadTestData() {
+        if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: store.receiptsFilePath) as? [[[Any]]] {
+            var output :[String: [Item: Int]] = [String: [Item: Int]]()
+            for i in 0..<ourData[0].count {
+                let dateStr = ourData[0][i][0] as! String
+                var dict: [Item: Int] = [Item: Int]()
+                for j in 0..<(ourData[1][i] as AnyObject).count {
+                    let item = (ourData[1][i] as! [Item])[j]
+                    let quant = (ourData[2][i] as! [Int])[j]
+                    dict[item] = quant
+                }
+                output[dateStr] = dict
+            }
+            store.PreviousPerchases = output
+            print("SUCCESSFUL LOAD")
+        } else {
+            print("FAILED LOAD")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,11 +55,11 @@ class HomeViewController: UIViewController {
         self.performSegue(withIdentifier: "GoToCustomerScreen", sender: self)
     }
     
-    @IBAction func adminButtonTapped(_ sender: Any) {
-        print("Admin button tapped")
-        
-        self.performSegue(withIdentifier: "GoToAdminScreen", sender: self)
-    }
+//    @IBAction func adminButtonTapped(_ sender: Any) {
+//        print("Admin button tapped")
+//
+//        self.performSegue(withIdentifier: "GoToAdminScreen", sender: self)
+//    }
     
     /*
     // MARK: - Navigation
@@ -50,23 +70,6 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    private func saveTestData(){
-        //Test
-        var data : [[Any]] = []
-        data[0] = []
-        
-        for receipt_date in store.PreviousPerchases.keys {
-            data[0].append(receipt_date)
-            
-        }
-        //NSKeyedArchiver is going to look through every Item class and list and look for encode function and is going to encode our data and save it
-        
-        //archiveRootObject saves our array of items to our filepath url
-        //Test changed Items -> ItemsDict
-        NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.keys), toFile: store.filePath)
-        NSKeyedArchiver.archiveRootObject(Array(self.store.ItemsDict.values), toFile: store.filePath2)
-    }
     
     private func loadData() {
         //Reset data

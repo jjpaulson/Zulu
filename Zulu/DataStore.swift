@@ -12,7 +12,20 @@ import UIKit
 class DataStore {
     static let sharedInstance = DataStore()
     
-    private init() {}
+    private init() {
+        staticInventory = [
+            Products["Spaghetti"]! : 5,
+            Products["Milk"]! : 10,
+            Products["Cereal"]! : 15,
+            Products["Donuts"]! : 20,
+            Products["Celery"]! : 100,
+            Products["Chicken"]! : 75,
+            Products["Bananas"]! : 75,
+            Products["Bagels"]! : 0
+        ]
+        print(staticInventory)
+    }
+    
     var Items : [Item] = []
     //Test
     var ItemsDict: [Item: Int] = [Item: Int]()
@@ -37,6 +50,8 @@ class DataStore {
         "Bananas" : Item(name: "Bananas", price: 7.99, photo_str: "Bananas"),
         "Bagels" : Item(name: "Bagels", price: 4.99, photo_str: "Bagels")
         ]
+    
+    var staticInventory : [Item: Int] = [Item: Int]()
     
     //Test
     //var productToAdd : Item = Item(name: "", price: 0.0)

@@ -31,8 +31,14 @@ class ReceiptsTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
+        fillArray()
+        
+        tableView.reloadData()
+    }
+    
+    private func fillArray() {
         var allDates: [Date] = []
         var stringDates: [String] = []
         
@@ -48,14 +54,13 @@ class ReceiptsTableViewController: UITableViewController {
             allDates.append(date)
         }
         
+        sortedDates = [Date: String]()
         for i in 0..<allDates.count {
             sortedDates[allDates[i]] = stringDates[i]
         }
         
         // https://stackoverflow.com/questions/38168594/sort-objects-in-array-by-date
         sortedDateKeys = Array(sortedDates.keys).sorted(by: { $0.compare($1) == .orderedDescending })
-        
-        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -127,8 +132,17 @@ class ReceiptsTableViewController: UITableViewController {
      */
     
     
+    //Delete Receipts
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let date: Date = sortedDateKeys[indexPath.row]
+            var dateString: String! = sortedDates[date]
+            store.PreviousPerchases[dateString] = nil
+            fillArray()
+            saveReceiptData()
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
         // Do nothing.
     }
     
@@ -139,6 +153,21 @@ class ReceiptsTableViewController: UITableViewController {
             totalPrice += (Item.key.initPrice) * Float(Item.value)
         }
         return totalPrice
+    }
+    
+    private func saveReceiptData(){
+        var data : [[Any]] = []
+        data.append([])
+        data.append([])
+        data.append([])
+        
+        for receipt_date in store.PreviousPerchases.keys {
+            data[0].append([receipt_date])
+            data[1].append(Array(store.PreviousPerchases[receipt_date]!.keys))
+            data[2].append(Array(store.PreviousPerchases[receipt_date]!.values))
+        }
+        
+        NSKeyedArchiver.archiveRootObject(data, toFile: store.receiptsFilePath)
     }
     
     /*
