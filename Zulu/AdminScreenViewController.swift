@@ -10,9 +10,16 @@ import UIKit
 
 class AdminScreenViewController: UIViewController {
 
+    @IBOutlet weak var InventoryButton: UIButton!
+    @IBOutlet weak var CheckReceiptsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        InventoryButton.layer.cornerRadius = 10
+        InventoryButton.clipsToBounds = true
+        
+        CheckReceiptsButton.layer.cornerRadius = 10
+        CheckReceiptsButton.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 

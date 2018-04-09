@@ -34,6 +34,10 @@ class PayViewController: UIViewController {
         cityStateField.text = "Champaign, IL"
         zipCodeField.text = "61820"
         cardNumberField.text = "123456789"
+        
+        purchaseButton.layer.cornerRadius = 10
+        purchaseButton.clipsToBounds = true
+        
     }
     
 //    override func didMove(toParentViewController parent: UIViewController?) {

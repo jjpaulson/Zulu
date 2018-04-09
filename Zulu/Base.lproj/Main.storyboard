@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.90971720219999996" green="0.9098665118" blue="0.90968543290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7gp-6l-XNv" firstAttribute="top" secondItem="bPF-HK-rTh" secondAttribute="bottom" constant="78" id="6cE-9T-2hE"/>
                             <constraint firstItem="LhG-Qt-wdX" firstAttribute="trailing" secondItem="bPF-HK-rTh" secondAttribute="trailing" constant="30" id="KsQ-u4-E2X"/>
@@ -62,6 +62,10 @@
                         <viewLayoutGuide key="safeArea" id="LhG-Qt-wdX"/>
                     </view>
                     <navigationItem key="navigationItem" id="F3i-Op-Bte"/>
+                    <connections>
+                        <outlet property="AdminButton" destination="7gp-6l-XNv" id="TWf-1u-4wl"/>
+                        <outlet property="CustomerButton" destination="bPF-HK-rTh" id="Zky-TU-Dxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HF1-kJ-Xxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,8 +96,8 @@
                                                         <fragment content="Virtual Cart">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" headIndent="10" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" headIndent="10" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -102,7 +106,7 @@
                                                     <action selector="VirtualCartButton:" destination="IjB-fl-XfI" eventType="touchUpInside" id="csN-fD-1xi"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sadCart" translatesAutoresizingMaskIntoConstraints="NO" id="Fw2-BB-aIh">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoppingCart" translatesAutoresizingMaskIntoConstraints="NO" id="Fw2-BB-aIh">
                                                 <rect key="frame" x="42" y="69" width="159" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -117,8 +121,8 @@
                                                         <fragment content="Zephyr">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" headIndent="10" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" headIndent="10" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -139,8 +143,8 @@
                                                         <fragment content="Past Purchases">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -149,7 +153,7 @@
                                                     <segue destination="KlZ-SE-fes" kind="show" id="Tv6-NN-gbT"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uncertainbag" translatesAutoresizingMaskIntoConstraints="NO" id="7v0-vj-3ed" userLabel="Bag">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foodbag" translatesAutoresizingMaskIntoConstraints="NO" id="7v0-vj-3ed" userLabel="Bag">
                                                 <rect key="frame" x="73" y="439" width="97" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -164,8 +168,8 @@
                                                         <fragment content="Store Search">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" tighteningFactorForTruncation="0.0"/>
+                                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -179,7 +183,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.90971720218658447" green="0.90986651182174683" blue="0.90968543291091919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="cd7-E6-xAz" firstAttribute="top" secondItem="QCG-NU-z0d" secondAttribute="bottom" constant="40" id="6bH-7x-KLe"/>
                                             <constraint firstItem="QCG-NU-z0d" firstAttribute="top" secondItem="g4f-94-LZV" secondAttribute="top" constant="45" id="6xo-uz-qnM"/>
@@ -226,6 +230,10 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1100"/>
                     <connections>
+                        <outlet property="PastPurchasesButton" destination="I83-B7-BG0" id="8hL-6A-Q99"/>
+                        <outlet property="SearchButton" destination="q34-aj-OJI" id="K74-rf-vAm"/>
+                        <outlet property="VirtualCartButton" destination="QCG-NU-z0d" id="WAm-xR-e6Y"/>
+                        <outlet property="ZephyrButton" destination="cd7-E6-xAz" id="n5E-0Q-LAf"/>
                         <segue destination="1Yd-kK-mJe" kind="show" identifier="Checkout" id="Aw5-IS-aDU"/>
                         <segue destination="1Yd-kK-mJe" kind="show" identifier="VirtualCart" id="mQl-gk-BfR"/>
                     </connections>
@@ -324,7 +332,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hks-JC-Skn">
                                             <rect key="frame" x="98" y="6" width="261" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -417,7 +425,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIG-AN-qYk">
                                                 <rect key="frame" x="100" y="361" width="175" height="42"/>
-                                                <color key="backgroundColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.68150788545608521" green="0.9534723162651062" blue="0.35309383273124695" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Purchase">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,7 +441,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.90971720219999996" green="0.9098665118" blue="0.90968543290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="2DB-xX-dBw" firstAttribute="leading" secondItem="RS5-Ft-of8" secondAttribute="leading" constant="50" id="0Tc-Ut-sgd"/>
                                             <constraint firstItem="961-nH-qPi" firstAttribute="top" secondItem="2DB-xX-dBw" secondAttribute="bottom" constant="20" id="1kz-pv-6TT"/>
@@ -560,10 +568,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYQ-SZ-eI3">
-                                <rect key="frame" x="104" y="386" width="166" height="51"/>
+                                <rect key="frame" x="216" y="382" width="91" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26701849700000002" green="0.56600409750000003" blue="0.63463824989999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Yes, add to my cart!">
+                                <color key="backgroundColor" red="0.68150788549999997" green="0.95347231629999996" blue="0.3530938327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Yes">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -576,6 +584,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42R-go-1uL" userLabel="No">
+                                <rect key="frame" x="67" y="382" width="91" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50858035034387816" blue="0.4685711397585034" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IjB-fl-XfI" kind="show" id="gdO-Yu-Dx6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -590,6 +609,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="a63-gw-aP1"/>
                     <connections>
+                        <outlet property="addButton" destination="JYQ-SZ-eI3" id="bDG-XR-pgY"/>
+                        <outlet property="cancelButton" destination="42R-go-1uL" id="gxc-Wz-qW9"/>
                         <outlet property="productImageView" destination="nHS-RB-BM8" id="kNY-35-9gM"/>
                         <outlet property="productNameLabel" destination="cCI-0D-RJP" id="grO-GH-r8P"/>
                         <outlet property="productPriceLabel" destination="0r8-jR-Wjy" id="MEo-4B-EC5"/>
@@ -639,18 +660,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4P-BS-i8x">
-                                <rect key="frame" x="30" y="95" width="315" height="176"/>
+                                <rect key="frame" x="30" y="123" width="315" height="123"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="176" id="joi-cO-BKA"/>
+                                    <constraint firstAttribute="height" constant="123" id="iT3-R8-YWi"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Inventory">
                                             <attributes>
                                                 <color key="NSColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" tighteningFactorForTruncation="0.0"/>
+                                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -660,18 +681,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdW-LD-dgt">
-                                <rect key="frame" x="30" y="321" width="315" height="176"/>
+                                <rect key="frame" x="30" y="351" width="315" height="122"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="176" id="iB9-Qz-83M"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="122" id="j8q-Eo-k0p"/>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Check Receipts">
                                             <attributes>
                                                 <color key="NSColor" red="0.26701849700000002" green="0.56600409750000003" blue="0.63463824989999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="50" tighteningFactorForTruncation="0.0"/>
+                                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" firstLineHeadIndent="40" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -693,27 +714,33 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90971720219999996" green="0.9098665118" blue="0.90968543290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88169017243331538" green="0.94030848197235539" blue="0.95521648119251701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fdu-cz-b96" firstAttribute="top" secondItem="9Mw-22-MVD" secondAttribute="top" constant="115" id="0AE-el-61b"/>
                             <constraint firstItem="9Mw-22-MVD" firstAttribute="trailing" secondItem="XdW-LD-dgt" secondAttribute="trailing" constant="30" id="0RS-QT-7Gv"/>
+                            <constraint firstItem="BqW-In-1hV" firstAttribute="top" secondItem="N4P-BS-i8x" secondAttribute="bottom" constant="115" id="DvS-V9-3xE"/>
+                            <constraint firstItem="9Mw-22-MVD" firstAttribute="trailing" secondItem="N4P-BS-i8x" secondAttribute="trailing" constant="30" id="E1b-d9-yrO"/>
                             <constraint firstItem="9Mw-22-MVD" firstAttribute="trailing" secondItem="BqW-In-1hV" secondAttribute="trailing" constant="169" id="FRS-Vu-nyr"/>
                             <constraint firstItem="9Mw-22-MVD" firstAttribute="trailing" secondItem="Fdu-cz-b96" secondAttribute="trailing" constant="169" id="I0h-lF-YlT"/>
-                            <constraint firstItem="BqW-In-1hV" firstAttribute="top" secondItem="N4P-BS-i8x" secondAttribute="bottom" constant="90" id="J1k-fR-PV0"/>
                             <constraint firstItem="Fdu-cz-b96" firstAttribute="leading" secondItem="9Mw-22-MVD" secondAttribute="leading" constant="47" id="R7E-xj-qF0"/>
+                            <constraint firstItem="XdW-LD-dgt" firstAttribute="top" secondItem="N4P-BS-i8x" secondAttribute="bottom" constant="105" id="RdY-L2-3nX"/>
                             <constraint firstItem="BqW-In-1hV" firstAttribute="leading" secondItem="9Mw-22-MVD" secondAttribute="leading" constant="47" id="W8F-Du-enf"/>
+                            <constraint firstItem="N4P-BS-i8x" firstAttribute="leading" secondItem="9Mw-22-MVD" secondAttribute="leading" constant="30" id="Y2F-mh-LRk"/>
                             <constraint firstItem="N4P-BS-i8x" firstAttribute="leading" secondItem="9Mw-22-MVD" secondAttribute="leading" constant="30" id="f0H-xC-2PF"/>
                             <constraint firstItem="9Mw-22-MVD" firstAttribute="trailing" secondItem="N4P-BS-i8x" secondAttribute="trailing" constant="30" id="lBx-5W-A11"/>
                             <constraint firstItem="XdW-LD-dgt" firstAttribute="leading" secondItem="9Mw-22-MVD" secondAttribute="leading" constant="30" id="oB0-wd-SFy"/>
-                            <constraint firstItem="XdW-LD-dgt" firstAttribute="top" secondItem="N4P-BS-i8x" secondAttribute="bottom" constant="50" id="vW4-yb-3Yp"/>
-                            <constraint firstItem="N4P-BS-i8x" firstAttribute="top" secondItem="9Mw-22-MVD" secondAttribute="top" constant="75" id="wQ9-q5-nrh"/>
+                            <constraint firstItem="N4P-BS-i8x" firstAttribute="top" secondItem="9Mw-22-MVD" secondAttribute="top" constant="103" id="tSw-50-Zkk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Mw-22-MVD"/>
                     </view>
+                    <connections>
+                        <outlet property="CheckReceiptsButton" destination="XdW-LD-dgt" id="kdJ-68-RuE"/>
+                        <outlet property="InventoryButton" destination="N4P-BS-i8x" id="2S3-uc-Mrx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pum-vz-WDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="887"/>
+            <point key="canvasLocation" x="516" y="886.50674662668678"/>
         </scene>
         <!--Inventory-->
         <scene sceneID="57q-08-gXj">
@@ -1423,7 +1450,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34o-yh-ksp">
                                             <rect key="frame" x="98" y="6" width="261" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1493,7 +1520,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.90971720219999996" green="0.9098665118" blue="0.90968543290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uOm-ji-rDD" firstAttribute="top" secondItem="eg7-b5-8si" secondAttribute="top" id="3mI-xt-2GW"/>
                             <constraint firstItem="yi7-S8-fkq" firstAttribute="top" secondItem="eg7-b5-8si" secondAttribute="top" constant="303" id="6f2-gW-dma"/>
@@ -1597,7 +1624,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPl-aI-fhy">
                                             <rect key="frame" x="98" y="6" width="261" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1648,18 +1675,18 @@
         <image name="ConventionCenter" width="352" height="203"/>
         <image name="checkReceipts" width="129" height="192"/>
         <image name="defaultPhoto" width="960" height="540"/>
+        <image name="foodbag" width="131" height="96"/>
         <image name="happyQRCode" width="1200" height="1200"/>
         <image name="inventory" width="490" height="498"/>
-        <image name="sadCart" width="600" height="488"/>
         <image name="search-icon-614x460" width="307" height="230"/>
-        <image name="uncertainbag" width="112" height="112"/>
+        <image name="shoppingCart" width="325" height="325"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zvh-Hj-H0o"/>
         <segue reference="zUH-Ot-gDQ"/>
         <segue reference="P46-Sb-8LV"/>
         <segue reference="Aw5-IS-aDU"/>
-        <segue reference="ihj-0m-ex0"/>
+        <segue reference="gdO-Yu-Dx6"/>
         <segue reference="SB4-VS-8Ib"/>
     </inferredMetricsTieBreakers>
 </document>

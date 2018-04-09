@@ -14,10 +14,18 @@ class ProductConfirmationViewController: UIViewController {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     //Test
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    
     @IBOutlet weak var productImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addButton.layer.cornerRadius = 10
+        addButton.clipsToBounds = true
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
         
         productNameLabel.text = store.productToAdd.initName
         //Test

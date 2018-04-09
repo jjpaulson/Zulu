@@ -12,9 +12,27 @@ class CustomerScreenViewController: UIViewController {
 
     var store = DataStore.sharedInstance
     
+    @IBOutlet weak var VirtualCartButton: UIButton!
+    @IBOutlet weak var ZephyrButton: UIButton!
+    @IBOutlet weak var PastPurchasesButton: UIButton!
+    @IBOutlet weak var SearchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        VirtualCartButton.layer.cornerRadius = 10
+        VirtualCartButton.clipsToBounds = true
+        
+        ZephyrButton.layer.cornerRadius = 10
+        ZephyrButton.clipsToBounds = true
+        
+        PastPurchasesButton.layer.cornerRadius = 10
+        PastPurchasesButton.clipsToBounds = true
+        
+        SearchButton.layer.cornerRadius = 10
+        SearchButton.clipsToBounds = true
+        
     }
     
     override func didReceiveMemoryWarning() {

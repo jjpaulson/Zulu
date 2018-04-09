@@ -14,11 +14,20 @@ class HomeViewController: UIViewController {
     //var ref : DatabaseReference?
     var store = DataStore.sharedInstance
     
+    @IBOutlet weak var CustomerButton: UIButton!
+    @IBOutlet weak var AdminButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = UIColor.black;
         loadData()
         loadTestData()
+        
+        CustomerButton.layer.cornerRadius = 10
+        CustomerButton.clipsToBounds = true
+        
+        AdminButton.layer.cornerRadius = 10
+        AdminButton.clipsToBounds = true
         
         // Do any additional setup after loading the view.
         //ref = Database.database().reference()
