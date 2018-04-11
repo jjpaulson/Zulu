@@ -14,10 +14,35 @@ class InventoryTableViewController: UITableViewController {
     
     var store = DataStore.sharedInstance
     
+    // Search Bar https://www.raywenderlich.com/157864/uisearchcontroller-tutorial-getting-started
+    var searchController : UISearchController? = nil
+    var filteredInventory: [Item: (Int, Int)] = [Item: (Int, Int)]()
+    
     @IBOutlet var myTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    // Functions for searching inventory
+    func isFiltering() -> Bool {
+        let searchBarScopeIsFiltering = searchController?.searchBar.selectedScopeButtonIndex != 0
+        return (!searchBarIsEmpty() || searchBarScopeIsFiltering)
+    }
+
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController!.searchBar.text?.isEmpty ?? true
+    }
+
+    func filterContentForSearchText(_ searchText: String,  scope: String = "All") {
+        let all = (scope == "All")
+        
+        filteredInventory = store.staticInventory.filter{
+            ($0.key.initName.contains(searchText) || searchBarIsEmpty())
+                && (all || $0.value.0 <= $0.value.1) } //if inventory# <= inventory low threshold
+
+        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +63,10 @@ class InventoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering() {
+            return filteredInventory.count
+        }
+        
         return self.store.staticInventory.count
     }
     
@@ -49,8 +78,19 @@ class InventoryTableViewController: UITableViewController {
             fatalError("The deqeued cell is not an instance of InventoryItemCell")
         }
         
-        let newItem = Array(self.store.staticInventory)[indexPath.row].key
-        let quantity = Array(self.store.staticInventory)[indexPath.row].value
+        let newItem: Item
+        let quantity: Int
+        let low_threshold: Int
+        
+        if isFiltering() {
+            newItem = Array(filteredInventory)[indexPath.row].key
+            quantity = Array(filteredInventory)[indexPath.row].value.0
+            low_threshold = Array(filteredInventory)[indexPath.row].value.1
+        } else {
+            newItem = Array(self.store.staticInventory)[indexPath.row].key
+            quantity = Array(self.store.staticInventory)[indexPath.row].value.0
+            low_threshold = Array(self.store.staticInventory)[indexPath.row].value.1
+        }
         cell.productNameLabel.text = newItem.initName
         //Test
         let priceString = String.localizedStringWithFormat("%.2f", newItem.initPrice)
@@ -59,7 +99,7 @@ class InventoryTableViewController: UITableViewController {
         //Test
         cell.productImageView.image = UIImage(named: newItem.initPhotoStr)
         cell.productQuantityLabel.text = "Quantity: \(quantity)"
-        if quantity <= 10 {
+        if quantity <= low_threshold {
             cell.productQuantityLabel.textColor = UIColor.red
         } else {
             cell.productQuantityLabel.textColor = UIColor.black
@@ -67,31 +107,5 @@ class InventoryTableViewController: UITableViewController {
         
         return cell
     }
-    
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

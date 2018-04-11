@@ -138,6 +138,7 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 //    }
     
     var segueFlag = false
+    var segueToCheckoutStationFlag = false
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -161,11 +162,17 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 {
                     store.productToAdd = store.Products[messageLabel.text!]!
                     segueFlag = true
+                } else if messageLabel.text == nil || messageLabel.text!.starts(with: "Checkout Station") {
+                    store.checkoutStation = messageLabel.text
+                    segueToCheckoutStationFlag = true
                 }
             }
         }
         if segueFlag {
             performSegue(withIdentifier: "GoToConfirmation", sender: self)
+            captureSession.stopRunning()
+        } else if segueToCheckoutStationFlag {
+            performSegue(withIdentifier: "GoToCheckoutStationSegue", sender: self)
             captureSession.stopRunning()
         }
     }

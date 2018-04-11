@@ -533,6 +533,7 @@
                     <connections>
                         <outlet property="messageLabel" destination="gKx-Li-Jiv" id="NLE-YK-Ujc"/>
                         <segue destination="PB4-6I-1v8" kind="push" identifier="GoToConfirmation" id="bBH-mk-jUg"/>
+                        <segue destination="Veh-bx-Scq" kind="show" identifier="GoToCheckoutStationSegue" id="kZC-Vs-zgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaE-Ez-iMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -620,6 +621,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAq-3F-T2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4445.6000000000004" y="156.97151424287858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g8l-Bo-2Av">
+            <objects>
+                <viewController id="Veh-bx-Scq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tpj-qU-t5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout Station #X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ5-rl-dnv">
+                                <rect key="frame" x="25" y="120" width="325" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jonathan Paulson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3L-Sq-TFC">
+                                <rect key="frame" x="25" y="196.5" width="325" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JonathanProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-5U-nR5">
+                                <rect key="frame" x="100" y="240.5" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="2NU-oI-m8A"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVD-GR-nC9">
+                                <rect key="frame" x="100" y="462" width="175" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68150788549999997" green="0.95347231629999996" blue="0.3530938327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Send Receipt">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8E2-5U-nR5" firstAttribute="top" secondItem="E3L-Sq-TFC" secondAttribute="bottom" constant="20" id="3o6-Pa-pph"/>
+                            <constraint firstItem="8E2-5U-nR5" firstAttribute="leading" secondItem="eW4-XV-7ys" secondAttribute="leading" constant="100" id="NcO-na-POe"/>
+                            <constraint firstItem="E3L-Sq-TFC" firstAttribute="leading" secondItem="eW4-XV-7ys" secondAttribute="leading" constant="25" id="aFN-kv-5vH"/>
+                            <constraint firstItem="NQ5-rl-dnv" firstAttribute="leading" secondItem="eW4-XV-7ys" secondAttribute="leading" constant="25" id="c52-n6-qFj"/>
+                            <constraint firstItem="eW4-XV-7ys" firstAttribute="trailing" secondItem="8E2-5U-nR5" secondAttribute="trailing" constant="100" id="chj-xP-AaV"/>
+                            <constraint firstItem="E3L-Sq-TFC" firstAttribute="top" secondItem="NQ5-rl-dnv" secondAttribute="bottom" constant="50" id="eFp-7I-uET"/>
+                            <constraint firstItem="NQ5-rl-dnv" firstAttribute="top" secondItem="eW4-XV-7ys" secondAttribute="top" constant="100" id="iUH-jh-yjB"/>
+                            <constraint firstItem="eW4-XV-7ys" firstAttribute="trailing" secondItem="E3L-Sq-TFC" secondAttribute="trailing" constant="25" id="kMq-Ra-BTG"/>
+                            <constraint firstItem="eW4-XV-7ys" firstAttribute="trailing" secondItem="NQ5-rl-dnv" secondAttribute="trailing" constant="25" id="uMR-HL-TKG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eW4-XV-7ys"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0V1-Vz-urx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5397.6000000000004" y="156.97151424287858"/>
         </scene>
         <!--Past Purchases-->
         <scene sceneID="iJ6-Vb-8Mn">
@@ -751,36 +807,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-Dd-FpN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <segue destination="bGJ-hM-tWd" kind="embed" id="Wx6-mp-Jvn"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMF-Hu-d7B">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcx-OI-6K7">
-                                        <rect key="frame" x="8" y="20" width="92" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.27052959799999998" green="0.56366902590000001" blue="0.64358848329999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="MCR-5W-ZOd"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Z6-Dd-FpN" firstAttribute="leading" secondItem="ZCa-p6-dbq" secondAttribute="leading" id="69w-1L-I1h"/>
-                            <constraint firstItem="pMF-Hu-d7B" firstAttribute="trailing" secondItem="ZCa-p6-dbq" secondAttribute="trailing" id="L6l-Yg-7W8"/>
+                            <constraint firstItem="ZCa-p6-dbq" firstAttribute="bottom" secondItem="7Z6-Dd-FpN" secondAttribute="bottom" id="Mbk-28-wjr"/>
                             <constraint firstItem="7Z6-Dd-FpN" firstAttribute="trailing" secondItem="ZCa-p6-dbq" secondAttribute="trailing" id="Xou-nH-f7p"/>
-                            <constraint firstItem="pMF-Hu-d7B" firstAttribute="bottom" secondItem="ZCa-p6-dbq" secondAttribute="bottom" id="bZk-9A-Cbd"/>
-                            <constraint firstItem="pMF-Hu-d7B" firstAttribute="top" secondItem="7Z6-Dd-FpN" secondAttribute="bottom" id="fV9-wz-ORQ"/>
-                            <constraint firstItem="pMF-Hu-d7B" firstAttribute="leading" secondItem="ZCa-p6-dbq" secondAttribute="leading" id="hwQ-6e-A6a"/>
                             <constraint firstItem="7Z6-Dd-FpN" firstAttribute="top" secondItem="ZCa-p6-dbq" secondAttribute="top" id="lWr-G1-sWC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCa-p6-dbq"/>
@@ -1264,7 +1301,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.27052959799999998" green="0.56366902590000001" blue="0.64358848329999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nzu-ci-wyN" firstAttribute="top" secondItem="NSC-Xx-E7n" secondAttribute="bottom" constant="8" symbolic="YES" id="3Y0-p8-uPX"/>
                             <constraint firstItem="NSC-Xx-E7n" firstAttribute="leading" secondItem="A8M-u7-TkI" secondAttribute="leadingMargin" id="48D-Ye-Ket"/>
@@ -1313,11 +1350,13 @@
                         <viewLayoutGuide key="safeArea" id="wRn-Yi-ZqC"/>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="dpg-nx-Y3j" id="ZaS-HV-xAX"/>
                         <outlet property="emailAddressTextField" destination="IKw-YV-mbZ" id="osV-Qf-F9N"/>
                         <outlet property="firstNameTextField" destination="Nzu-ci-wyN" id="PJh-xI-g0o"/>
                         <outlet property="lastNameTextField" destination="mCw-LK-YRn" id="Nxw-fV-ZSu"/>
                         <outlet property="passwordTextField" destination="XMk-6i-3ni" id="h25-ez-ItI"/>
                         <outlet property="repeatPasswordTextField" destination="wWb-pv-rdQ" id="PYy-gG-qA2"/>
+                        <outlet property="signUpButton" destination="F4u-qK-fvx" id="gD3-IK-WWg"/>
                         <outlet property="storeUserSwitch" destination="28H-J1-OWI" id="wOr-or-LHs"/>
                     </connections>
                 </viewController>
@@ -1376,7 +1415,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxX-zx-K1z">
                                 <rect key="frame" x="156" y="217" width="62" height="30"/>
-                                <color key="backgroundColor" red="0.33597414920000002" green="0.74767132319999996" blue="0.77829552660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.266268909" green="0.56333625320000003" blue="0.63573175670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="1" green="0.97978015699999998" blue="0.99552412140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1392,7 +1431,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.27052959799999998" green="0.56366902590000001" blue="0.64358848329999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88169017240000003" green="0.94030848199999995" blue="0.95521648120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fjh-he-fff" firstAttribute="top" secondItem="qmr-db-4tP" secondAttribute="top" constant="16" id="2Zc-S3-zrT"/>
                             <constraint firstItem="USG-Vd-bnm" firstAttribute="centerX" secondItem="sxX-zx-K1z" secondAttribute="centerX" id="69b-Ou-rfv"/>
@@ -1422,6 +1461,8 @@
                     </view>
                     <connections>
                         <outlet property="emailAddressTextField" destination="w0n-Ir-S6Q" id="sED-Mz-XK9"/>
+                        <outlet property="registerButton" destination="1Gg-z3-rVb" id="XSB-FC-hKH"/>
+                        <outlet property="signInButton" destination="sxX-zx-K1z" id="ETt-Lj-zSy"/>
                         <outlet property="userPasswordTextField" destination="USG-Vd-bnm" id="sAv-Bp-N0y"/>
                     </connections>
                 </viewController>
@@ -1434,7 +1475,7 @@
             <objects>
                 <tableViewController id="bGJ-hM-tWd" customClass="InventoryTableViewController" customModule="Zulu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="U9d-RW-j0H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="523"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="583"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.33597414920000002" green="0.74767132319999996" blue="0.77829552660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1673,6 +1714,7 @@
     </scenes>
     <resources>
         <image name="ConventionCenter" width="352" height="203"/>
+        <image name="JonathanProfilePic" width="374" height="374"/>
         <image name="checkReceipts" width="129" height="192"/>
         <image name="defaultPhoto" width="960" height="540"/>
         <image name="foodbag" width="131" height="96"/>
@@ -1682,6 +1724,7 @@
         <image name="shoppingCart" width="325" height="325"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eM4-l4-Z8O"/>
         <segue reference="zvh-Hj-H0o"/>
         <segue reference="zUH-Ot-gDQ"/>
         <segue reference="P46-Sb-8LV"/>

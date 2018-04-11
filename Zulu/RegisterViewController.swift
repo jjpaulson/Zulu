@@ -19,11 +19,20 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     @IBOutlet weak var storeUserSwitch: UISwitch!
     
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
     var refUsers : DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
+        
+        signUpButton.layer.cornerRadius = 10
+        signUpButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
         refUsers = Database.database().reference().child("users")
     }

@@ -13,15 +13,16 @@ class DataStore {
     static let sharedInstance = DataStore()
     
     private init() {
+        // Static inventory is of type [Item, (Amount, LowThreshold)]
         staticInventory = [
-            Products["Spaghetti"]! : 5,
-            Products["Milk"]! : 10,
-            Products["Cereal"]! : 15,
-            Products["Donuts"]! : 20,
-            Products["Celery"]! : 100,
-            Products["Chicken"]! : 75,
-            Products["Bananas"]! : 75,
-            Products["Bagels"]! : 0
+            Products["Spaghetti"]! : (500, 50),
+            Products["Milk"]! : (30, 10),
+            Products["Cereal"]! : (15, 50),
+            Products["Donuts"]! : (35, 24),
+            Products["Celery"]! : (20, 40),
+            Products["Chicken"]! : (75, 50),
+            Products["Bananas"]! : (75, 25),
+            Products["Bagels"]! : (0, 24)
         ]
         print(staticInventory)
     }
@@ -32,6 +33,8 @@ class DataStore {
     //Test
     var PreviousPerchases: [String: [Item:Int]] = [String:[Item:Int]]()
     var selectedReceipt: String? = nil
+    
+    var checkoutStation: String? = nil
 //    var Products : [String : Item] = [
 //        "Spaghetti" : Item(name: "Spaghetti", price: 5.75),
 //        "Milk" : Item(name: "Milk", price: 3.99),
@@ -51,7 +54,8 @@ class DataStore {
         "Bagels" : Item(name: "Bagels", price: 4.99, photo_str: "Bagels")
         ]
     
-    var staticInventory : [Item: Int] = [Item: Int]()
+    // Static inventory is of type [Item, (Amount, LowThreshold)]
+    var staticInventory : [Item: (Int, Int)] = [Item: (Int, Int)]()
     
     //Test
     //var productToAdd : Item = Item(name: "", price: 0.0)
