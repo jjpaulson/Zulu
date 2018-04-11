@@ -9,11 +9,18 @@
 import UIKit
 
 class StoreSearchViewController: UIViewController {
-
+    @IBOutlet weak var FavStoreButton: UIButton!
+    @IBOutlet weak var StoreLocationButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        FavStoreButton.layer.cornerRadius = 10
+        FavStoreButton.clipsToBounds = true
+        
+        StoreLocationButton.layer.cornerRadius = 10
+        StoreLocationButton.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
