@@ -1,22 +1,24 @@
 //
-//  InventoryTableViewController.swift
+//  ItemSearchTableViewController.swift
 //  Zulu
 //
-//  Created by Alexandre Geubelle on 4/5/18.
+//  Created by Alexandre Geubelle on 4/11/18.
 //  Copyright © 2018 Zulu. All rights reserved.
 //
+
 import UIKit
 import os.log
 
-class InventoryTableViewController: UITableViewController {
-    
-    //MARK Properties
-    
+class ItemSearchTableViewController: UITableViewController {
+
     var store = DataStore.sharedInstance
+    var selectGroceryItems: Bool? = false
     
     // Search Bar https://www.raywenderlich.com/157864/uisearchcontroller-tutorial-getting-started
     var searchController : UISearchController? = nil
-    var filteredInventory: [Item: (Int, Int)] = [Item: (Int, Int)]()
+    var filteredInventory: [String: Item] = [String: Item]()
+    
+    var currItem: Item? = nil
     
     @IBOutlet var myTableView: UITableView!
     
@@ -26,22 +28,23 @@ class InventoryTableViewController: UITableViewController {
     
     // Functions for searching inventory
     func isFiltering() -> Bool {
-        let searchBarScopeIsFiltering = searchController?.searchBar.selectedScopeButtonIndex != 0
-        return (!searchBarIsEmpty() || searchBarScopeIsFiltering)
+        //let searchBarScopeIsFiltering = searchController?.searchBar.selectedScopeButtonIndex != 0
+        //return (!searchBarIsEmpty() || searchBarScopeIsFiltering)
+        return (!searchBarIsEmpty())
     }
-
+    
     func searchBarIsEmpty() -> Bool {
         // Returns true if the text is empty or nil
         return searchController!.searchBar.text?.isEmpty ?? true
     }
-
+    
     func filterContentForSearchText(_ searchText: String,  scope: String = "All") {
         let all = (scope == "All")
         
-        filteredInventory = store.staticInventory.filter{
-            ($0.key.initName.lowercased().contains(searchText.lowercased()) || searchBarIsEmpty())
-                && (all || $0.value.0 <= $0.value.1) } //if inventory# <= inventory low threshold
-
+        filteredInventory = store.Products.filter {
+            ($0.value.initName.lowercased().contains(searchText.lowercased()) || searchBarIsEmpty())
+        }
+        
         tableView.reloadData()
     }
     
@@ -67,7 +70,7 @@ class InventoryTableViewController: UITableViewController {
             return filteredInventory.count
         }
         
-        return self.store.staticInventory.count
+        return self.store.Products.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,17 +82,11 @@ class InventoryTableViewController: UITableViewController {
         }
         
         let newItem: Item
-        let quantity: Int
-        let low_threshold: Int
         
         if isFiltering() {
-            newItem = Array(filteredInventory)[indexPath.row].key
-            quantity = Array(filteredInventory)[indexPath.row].value.0
-            low_threshold = Array(filteredInventory)[indexPath.row].value.1
+            newItem = Array(filteredInventory)[indexPath.row].value
         } else {
-            newItem = Array(self.store.staticInventory)[indexPath.row].key
-            quantity = Array(self.store.staticInventory)[indexPath.row].value.0
-            low_threshold = Array(self.store.staticInventory)[indexPath.row].value.1
+            newItem = Array(self.store.Products)[indexPath.row].value
         }
         cell.productNameLabel.text = newItem.initName
         //Test
@@ -98,14 +95,35 @@ class InventoryTableViewController: UITableViewController {
         cell.productPriceLabel.text = "$" + priceString
         //Test
         cell.productImageView.image = UIImage(named: newItem.initPhotoStr)
-        cell.productQuantityLabel.text = "Quantity: \(quantity)"
-        if quantity <= low_threshold {
-            cell.productQuantityLabel.textColor = UIColor.red
-        } else {
-            cell.productQuantityLabel.textColor = UIColor.black
-        }
+        
+        let locationStr = newItem.initAisleStr
+        let locationLabel: UILabel = cell.productQuantityLabel
+        locationLabel.text = locationStr
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.destination is SelectedItemDisplay {
+            (segue.destination as! SelectedItemDisplay).currItem = currItem
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if selectGroceryItems! == nil || (selectGroceryItems == false) {
+            print("false")
+            return
+        }else {
+            if isFiltering() {
+                currItem = Array(filteredInventory)[indexPath.row].value
+            } else {
+                currItem = Array(self.store.Products)[indexPath.row].value
+            }
+            self.performSegue(withIdentifier: "ToItemDisplaySegue", sender: nil)
+            return
+        }
+ 
     }
     
 }

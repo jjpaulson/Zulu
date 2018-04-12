@@ -35,6 +35,13 @@ class CustomerScreenViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.destination is ItemSearchOverviewController {
+            (segue.destination as! ItemSearchOverviewController).selectGroceryItems = true//false
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,7 +56,7 @@ class CustomerScreenViewController: UIViewController {
         print("Segue")
         performSegue(withIdentifier: "Checkout", sender: nil)
     }
-    
+
     /*
     // MARK: - Navigation
 

@@ -22,15 +22,21 @@ class DataStore {
             Products["Celery"]! : (20, 40),
             Products["Chicken"]! : (75, 50),
             Products["Bananas"]! : (75, 25),
-            Products["Bagels"]! : (0, 24)
+            Products["Bagels"]! : (0, 24),
+            Products["LaCroix"]! : (50, 24),
+            Products["CheeseSticks"]! : (10, 30),
+            Products["ChocolateMilk"]! : (15, 10),
+            Products["Cashews"]! : (50, 75),
+            Products["FrostedFlakes"]! : (30, 20)
         ]
         print(staticInventory)
     }
     
     var Items : [Item] = []
-    //Test
+
     var ItemsDict: [Item: Int] = [Item: Int]()
-    //Test
+    var shoppingList: [Item: (Int, Bool)] = [Item: (Int, Bool)]()
+    
     var PreviousPerchases: [String: [Item:Int]] = [String:[Item:Int]]()
     var selectedReceipt: String? = nil
     
@@ -44,14 +50,34 @@ class DataStore {
 //    ]
 
     var Products : [String : Item] = [
-        "Spaghetti" : Item(name: "Spaghetti", price: 5.75, photo_str: "Spaghetti"),
-        "Milk" : Item(name: "Milk", price: 3.99, photo_str: "Milk"),
-        "Cereal" : Item(name: "Cereal", price: 7.00, photo_str: "Cereal"),
-        "Donuts" : Item(name: "Donuts", price: 6.50, photo_str: "Donuts"),
-        "Celery" : Item(name: "Celery", price: 9.99, photo_str: "Celery"),
-        "Chicken" : Item(name: "Chicken", price: 8.99, photo_str: "Chicken"),
-        "Bananas" : Item(name: "Bananas", price: 7.99, photo_str: "Bananas"),
-        "Bagels" : Item(name: "Bagels", price: 4.99, photo_str: "Bagels")
+        
+        "LaCroix" : Item(name: "LaCroix", price: 3.18, photo_str: "LaCroix",
+                         aisle_str: "Aisle 4"),
+        "CheeseSticks" : Item(name: "Cheese Sticks 12 Ct.", price: 3.94, photo_str: "CheeseSticks",
+                         aisle_str: "Aisle 6"),
+        "ChocolateMilk" : Item(name: "Oberweis Chocolate Milk", price: 3.94, photo_str: "ChocolateMilk",
+                              aisle_str: "Aisle 6"),
+        "Cashews" : Item(name: "Cashews 24 oz.", price: 9.92, photo_str: "Cashews",
+                              aisle_str: "Aisle 7"),
+        "FrostedFlakes" : Item(name: "Frosted Flakes", price: 3.25, photo_str: "FrostedFlakes",
+                              aisle_str: "Aisle 7"),
+        
+        "Spaghetti" : Item(name: "Spaghetti", price: 5.75, photo_str: "Spaghetti",
+                           aisle_str: "Aisle 2"),
+        "Milk" : Item(name: "Milk", price: 3.99, photo_str: "Milk",
+                      aisle_str: "Aisle 6"),
+        "Cereal" : Item(name: "Cereal", price: 7.00, photo_str: "Cereal",
+                        aisle_str: "Aisle 5"),
+        "Donuts" : Item(name: "Donuts", price: 6.50, photo_str: "Donuts",
+                        aisle_str: "Bakery"),
+        "Celery" : Item(name: "Celery", price: 9.99, photo_str: "Celery",
+                        aisle_str: "Fresh Foods"),
+        "Chicken" : Item(name: "Chicken", price: 8.99, photo_str: "Chicken",
+                         aisle_str: "Butcher"),
+        "Bananas" : Item(name: "Bananas", price: 7.99, photo_str: "Bananas",
+                         aisle_str: "Aisle 12"),
+        "Bagels" : Item(name: "Bagels", price: 4.99, photo_str: "Bagels",
+                        aisle_str: "Aisle 11")
         ]
     
     // Static inventory is of type [Item, (Amount, LowThreshold)]

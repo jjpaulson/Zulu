@@ -158,7 +158,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
-                if messageLabel.text == store.Products[messageLabel.text!]?.initName
+                // if the store product dict has the QRCode as a key.
+                if store.Products[messageLabel.text!] != nil
                 {
                     store.productToAdd = store.Products[messageLabel.text!]!
                     segueFlag = true
