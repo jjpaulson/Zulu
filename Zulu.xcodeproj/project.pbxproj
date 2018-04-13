@@ -43,6 +43,7 @@
 		F089A1DF207EB43B0003BF68 /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1DE207EB43B0003BF68 /* GroceryListTableViewController.swift */; };
 		F089A1E1207F0D8B0003BF68 /* SelectedItemDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1E0207F0D8B0003BF68 /* SelectedItemDisplay.swift */; };
 		F089A1E3207FFF840003BF68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1E2207FFF830003BF68 /* Constants.swift */; };
+		F089A1E5208058D60003BF68 /* CheckoutStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1E4208058D60003BF68 /* CheckoutStationViewController.swift */; };
 		F09541B32076D8020073379B /* InventoryOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09541B22076D8020073379B /* InventoryOverviewController.swift */; };
 		F09541B52076DBB10073379B /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09541B42076DBB00073379B /* InventoryTableViewController.swift */; };
 		F09541B72076DBC50073379B /* InventoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09541B62076DBC50073379B /* InventoryItemCell.swift */; };
@@ -122,6 +123,7 @@
 		F089A1DE207EB43B0003BF68 /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 		F089A1E0207F0D8B0003BF68 /* SelectedItemDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemDisplay.swift; sourceTree = "<group>"; };
 		F089A1E2207FFF830003BF68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F089A1E4208058D60003BF68 /* CheckoutStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutStationViewController.swift; sourceTree = "<group>"; };
 		F09541B22076D8020073379B /* InventoryOverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryOverviewController.swift; sourceTree = "<group>"; };
 		F09541B42076DBB00073379B /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
 		F09541B62076DBC50073379B /* InventoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemCell.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				BA5390B220656D5D007713E2 /* VirtualCartTableViewController.swift */,
 				BA30F0BA2064C15900DEDA87 /* ZephyrViewController.swift */,
 				F089A1E2207FFF830003BF68 /* Constants.swift */,
+				F089A1E4208058D60003BF68 /* CheckoutStationViewController.swift */,
 			);
 			path = Zulu;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				F089A1E1207F0D8B0003BF68 /* SelectedItemDisplay.swift in Sources */,
 				BA5390AD20655955007713E2 /* Item.swift in Sources */,
 				F0B8B67E20733F5300601F86 /* ReceiptsTableViewController.swift in Sources */,
+				F089A1E5208058D60003BF68 /* CheckoutStationViewController.swift in Sources */,
 				BA457F57207470800036FBEA /* SearchLocationViewController.swift in Sources */,
 				F09541BF207819640073379B /* OverallNavigationController.swift in Sources */,
 				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,

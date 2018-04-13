@@ -17,9 +17,12 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var videoPreviewLayer : AVCaptureVideoPreviewLayer?
     var qrCodeFrameView : UIView?
     
+    var fromPay: Bool = false
+    
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.qr]
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var scanStationLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,8 +32,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Change
-        //loadData()
+        
+        scanStationLabel.isHidden = !fromPay
         
         // Do any additional setup after loading the view.
         var deviceDiscoverySession : AVCaptureDevice.DiscoverySession
@@ -79,6 +82,7 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         // Move the message label and top bar to the front
         view.bringSubview(toFront: messageLabel)
+        view.bringSubview(toFront: scanStationLabel)
         
         // Initialize QR Code Frame to highlight the QR code
         qrCodeFrameView = UIView()

@@ -42,6 +42,13 @@ class GroceryListTableViewController: UITableViewController {
         return store.shoppingList.count
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currItem : Item = Array(self.store.shoppingList)[indexPath.row].key
+        let quantityAndDone : (Int, Bool) = Array(self.store.shoppingList)[indexPath.row].value
+        store.shoppingList[currItem] = (quantityAndDone.0, !quantityAndDone.1)
+        tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "ProductTableViewCell"
@@ -50,8 +57,8 @@ class GroceryListTableViewController: UITableViewController {
             fatalError("The deqeued cell is not an instance of ProductTableViewCell")
         }
         
-        var newItem : Item = Array(self.store.shoppingList)[indexPath.row].key
-        var quantityAndDone : (Int, Bool) = Array(self.store.shoppingList)[indexPath.row].value
+        let newItem : Item = Array(self.store.shoppingList)[indexPath.row].key
+        let quantityAndDone : (Int, Bool) = Array(self.store.shoppingList)[indexPath.row].value
 
         let done = quantityAndDone.1
         let quantity: Int = quantityAndDone.0
@@ -83,6 +90,7 @@ class GroceryListTableViewController: UITableViewController {
             if parentOverview != nil {
                 parentOverview!.setTotalPrice()
             }
+            store.saveGroceryList()
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }

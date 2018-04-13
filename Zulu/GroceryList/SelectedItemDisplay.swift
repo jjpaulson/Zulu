@@ -46,12 +46,14 @@ class SelectedItemDisplay: UIViewController {
         }
         for item: Item in store.shoppingList.keys {
             if item.initName == currItem.initName {
-                store.shoppingList[item] = (Int(stepper.value), true)
+                store.shoppingList[item] = (Int(stepper.value), false)
+                store.saveGroceryList()
                 performSegue(withIdentifier: "addItemToGroceryListSegue", sender: sender)
                 return
             }
         }
-        store.shoppingList[currItem] = (Int(stepper.value), true)
+        store.shoppingList[currItem] = (Int(stepper.value), false)
+        store.saveGroceryList()
         performSegue(withIdentifier: "addItemToGroceryListSegue", sender: sender)
     }
     

@@ -38,7 +38,9 @@ class CustomerScreenViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if segue.destination is ItemSearchOverviewController {
-            (segue.destination as! ItemSearchOverviewController).selectGroceryItems = true//false
+            (segue.destination as! ItemSearchOverviewController).selectGroceryItems = false
+        } else if segue.destination is ZephyrViewController {
+            (segue.destination as! ZephyrViewController).fromPay = false
         }
     }
     

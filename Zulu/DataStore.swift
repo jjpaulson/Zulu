@@ -94,8 +94,6 @@ class DataStore {
         //This returns an array of urls from our documentDirectory and we take the first path
         let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
         
-        print("This is the url path in the documentDirectory \(url)")
-        
         //Creates a new path component and creates a new path called Data which is where we will store our data array and save it to our file path. This does everything for encoding and decoding
         
         return (url!.appendingPathComponent("Data").path)
@@ -106,8 +104,6 @@ class DataStore {
         
         //This returns an array of urls from our documentDirectory and we take the first path
         let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
-        
-        print("This is the url path in the documentDirectory \(url)")
         
         //Creates a new path component and creates a new path called Data which is where we will store our data array and save it to our file path. This does everything for encoding and decoding
         
@@ -121,10 +117,64 @@ class DataStore {
         //This returns an array of urls from our documentDirectory and we take the first path
         let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
         
-        print("This is the url path in the documentDirectory \(url)")
-        
         //Creates a new path component and creates a new path called Data which is where we will store our data array and save it to our file path. This does everything for encoding and decoding
         
         return (url!.appendingPathComponent("Receipts").path)
     }
+    
+    public func saveGroceryList() {
+        let store = DataStore.sharedInstance
+        NSKeyedArchiver.archiveRootObject(Array(store.shoppingList.keys), toFile: store.groceryListItemsPath)
+        
+        var quantities: [Int] = [Int]()
+        var isCheckedOff: [Bool] = [Bool]()
+        for tuple in Array(store.shoppingList.values) {
+            quantities.append(tuple.0)
+            isCheckedOff.append(tuple.1)
+        }
+        NSKeyedArchiver.archiveRootObject(Array(quantities), toFile: store.groceryListItemsQuantityPath)
+        NSKeyedArchiver.archiveRootObject(Array(isCheckedOff), toFile: store.groceryListItemsDonePath)
+    }
+    
+    public func loadGroceryList() {
+        let store = DataStore.sharedInstance
+        var groceryListItems: [Item]? = NSKeyedUnarchiver.unarchiveObject(withFile: store.groceryListItemsPath) as? [Item]
+        var groceryListQuantities: [Int]? = NSKeyedUnarchiver.unarchiveObject(withFile: store.groceryListItemsQuantityPath) as? [Int]
+        var groceryListIsDone: [Bool]? = NSKeyedUnarchiver.unarchiveObject(withFile: store.groceryListItemsDonePath) as? [Bool]
+        store.shoppingList = [Item: (Int, Bool)]()
+        
+        if groceryListItems == nil {
+            groceryListItems = [Item]()
+        }
+        if groceryListQuantities == nil {
+            groceryListQuantities = [Int]()
+        }
+        if groceryListIsDone == nil {
+            groceryListIsDone = [Bool]()
+        }
+        
+        for i in 0 ..< groceryListItems!.count {
+            store.shoppingList[groceryListItems![i]] = (groceryListQuantities![i], groceryListIsDone![i])
+        }
+    }
+    
+    var groceryListItemsPath : String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+        return (url!.appendingPathComponent("groceryListItem").path)
+    }
+    
+    var groceryListItemsQuantityPath : String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+        return (url!.appendingPathComponent("groceryListQuantitiesItem").path)
+    }
+    
+    var groceryListItemsDonePath : String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+        return (url!.appendingPathComponent("groceryListIsDoneItem").path)
+    }
+    
+    
 }
