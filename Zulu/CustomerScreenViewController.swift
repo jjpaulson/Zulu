@@ -16,6 +16,7 @@ class CustomerScreenViewController: UIViewController {
     @IBOutlet weak var ZephyrButton: UIButton!
     @IBOutlet weak var PastPurchasesButton: UIButton!
     @IBOutlet weak var SearchButton: UIButton!
+    @IBOutlet weak var ShoppingListButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,9 @@ class CustomerScreenViewController: UIViewController {
         
         SearchButton.layer.cornerRadius = 10
         SearchButton.clipsToBounds = true
+        
+        ShoppingListButton.layer.cornerRadius = 10
+        ShoppingListButton.clipsToBounds = true
         
     }
     

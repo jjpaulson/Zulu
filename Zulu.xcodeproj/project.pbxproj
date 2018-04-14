@@ -37,6 +37,7 @@
 		BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB645C820640A9B0007D190 /* SignInViewController.swift */; };
 		F03C1EA9206FF1210026B634 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */; };
 		F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C1EAA207080380026B634 /* CartOverViewController.swift */; };
+		F052C8D32082A62B000931A2 /* GroceryListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C8D22082A62A000931A2 /* GroceryListItemTableViewCell.swift */; };
 		F089A1D8207E93F50003BF68 /* ItemSearchOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1D7207E93F50003BF68 /* ItemSearchOverviewController.swift */; };
 		F089A1DA207E94110003BF68 /* ItemSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1D9207E94110003BF68 /* ItemSearchTableViewController.swift */; };
 		F089A1DD207EB4120003BF68 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A1DC207EB4120003BF68 /* GroceryListViewController.swift */; };
@@ -117,6 +118,7 @@
 		DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.release.xcconfig"; sourceTree = "<group>"; };
 		F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F03C1EAA207080380026B634 /* CartOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartOverViewController.swift; sourceTree = "<group>"; };
+		F052C8D22082A62A000931A2 /* GroceryListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItemTableViewCell.swift; sourceTree = "<group>"; };
 		F089A1D7207E93F50003BF68 /* ItemSearchOverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchOverviewController.swift; sourceTree = "<group>"; };
 		F089A1D9207E94110003BF68 /* ItemSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchTableViewController.swift; sourceTree = "<group>"; };
 		F089A1DC207EB4120003BF68 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				F089A1DC207EB4120003BF68 /* GroceryListViewController.swift */,
 				F089A1DE207EB43B0003BF68 /* GroceryListTableViewController.swift */,
 				F089A1E0207F0D8B0003BF68 /* SelectedItemDisplay.swift */,
+				F052C8D22082A62A000931A2 /* GroceryListItemTableViewCell.swift */,
 			);
 			path = GroceryList;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				F09541BF207819640073379B /* OverallNavigationController.swift in Sources */,
 				BA67E6E42064432B000727C8 /* HomeViewController.swift in Sources */,
 				F09541B32076D8020073379B /* InventoryOverviewController.swift in Sources */,
+				F052C8D32082A62B000931A2 /* GroceryListItemTableViewCell.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				F09541B52076DBB10073379B /* InventoryTableViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,

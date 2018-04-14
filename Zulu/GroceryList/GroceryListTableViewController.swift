@@ -47,13 +47,14 @@ class GroceryListTableViewController: UITableViewController {
         let quantityAndDone : (Int, Bool) = Array(self.store.shoppingList)[indexPath.row].value
         store.shoppingList[currItem] = (quantityAndDone.0, !quantityAndDone.1)
         tableView.reloadData()
+        store.saveGroceryList()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellIdentifier = "ProductTableViewCell"
+        let cellIdentifier = "ListItemTableViewCell"
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ProductTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? GroceryListItemTableViewCell else {
             fatalError("The deqeued cell is not an instance of ProductTableViewCell")
         }
         
@@ -63,10 +64,12 @@ class GroceryListTableViewController: UITableViewController {
         let done = quantityAndDone.1
         let quantity: Int = quantityAndDone.0
         
+        
+        
         if done {
-            cell.backgroundColor = Constants.goGreen
+            cell.checkedImage.image = UIImage(named: "checked-checkbox")
         } else {
-            cell.backgroundColor = Constants.noColor
+            cell.checkedImage.image = UIImage(named: "unchecked-checkbox")
         }
         
         cell.productNameLabel.text = newItem.initName

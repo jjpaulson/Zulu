@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
         refUsers = Database.database().reference().child("users")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
