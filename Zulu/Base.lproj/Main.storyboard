@@ -915,7 +915,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-Dd-FpN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <segue destination="bGJ-hM-tWd" kind="embed" id="Wx6-mp-Jvn"/>
                                 </connections>
@@ -1124,6 +1124,10 @@
                         <color key="backgroundColor" red="0.88074833154678345" green="0.94063884019851685" blue="0.9568977952003479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qxa-FS-UfB"/>
                     </view>
+                    <connections>
+                        <outlet property="FavStoreButton" destination="uVh-3U-fEs" id="aCK-US-tIl"/>
+                        <outlet property="LocationStoreButton" destination="3VH-Rg-Fxm" id="zNH-hd-rXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4o-aH-pBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1200,21 +1204,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ata-JO-ci5">
-                                <rect key="frame" x="166" y="111" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l54-To-A90">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l54-To-A90" secondAttribute="bottom" id="JET-fK-I8Q"/>
+                            <constraint firstItem="l54-To-A90" firstAttribute="trailing" secondItem="9a7-XV-SxH" secondAttribute="trailing" id="VcQ-OB-8Az"/>
+                            <constraint firstItem="l54-To-A90" firstAttribute="top" secondItem="MZt-RV-i5H" secondAttribute="top" id="e70-xi-9uc"/>
+                            <constraint firstItem="l54-To-A90" firstAttribute="leading" secondItem="9a7-XV-SxH" secondAttribute="leading" id="ecQ-nD-RWu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9a7-XV-SxH"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="l54-To-A90" id="y9r-md-ZSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeX-eT-p5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2082" y="1749"/>
+            <point key="canvasLocation" x="2080.8000000000002" y="1748.2758620689656"/>
         </scene>
         <!--Location Description View Controller-->
         <scene sceneID="Tmg-ul-Leo">
@@ -1258,6 +1267,10 @@
                         <color key="backgroundColor" red="0.88074833149999998" green="0.94063884019999999" blue="0.95689779519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="9NL-ee-Ho9"/>
                     </view>
+                    <connections>
+                        <outlet property="SearchInventoryButton" destination="BES-vN-rG3" id="k9v-Ln-Zbw"/>
+                        <outlet property="SeeHoursButton" destination="ePi-3S-C19" id="SLQ-Dt-e5W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNn-gr-YuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1583,7 +1596,7 @@
             <objects>
                 <tableViewController id="bGJ-hM-tWd" customClass="InventoryTableViewController" customModule="Zulu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="U9d-RW-j0H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="583"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.33597414920000002" green="0.74767132319999996" blue="0.77829552660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2438,6 +2451,6 @@
         <segue reference="5PF-om-ptj"/>
         <segue reference="Aw5-IS-aDU"/>
         <segue reference="rRd-jh-ruh"/>
-        <segue reference="SB4-VS-8Ib"/>
+        <segue reference="EEr-dv-eGT"/>
     </inferredMetricsTieBreakers>
 </document>

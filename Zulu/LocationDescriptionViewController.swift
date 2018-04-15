@@ -10,9 +10,16 @@ import UIKit
 
 class LocationDescriptionViewController: UIViewController {
 
+    @IBOutlet weak var SearchInventoryButton: UIButton!
+    @IBOutlet weak var SeeHoursButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        SearchInventoryButton.layer.cornerRadius = 10
+        SearchInventoryButton.clipsToBounds = true
+        
+        SeeHoursButton.layer.cornerRadius = 10
+        SeeHoursButton.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
