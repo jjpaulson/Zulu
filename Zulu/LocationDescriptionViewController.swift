@@ -21,6 +21,11 @@ class LocationDescriptionViewController: UIViewController {
         SeeHoursButton.layer.cornerRadius = 10
         SeeHoursButton.clipsToBounds = true
         // Do any additional setup after loading the view.
+        SeeHoursButton.layer.cornerRadius = 10
+        SeeHoursButton.clipsToBounds = true
+        
+        SearchInventoryButton.layer.cornerRadius = 10
+        SearchInventoryButton.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
