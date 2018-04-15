@@ -17,9 +17,12 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var videoPreviewLayer : AVCaptureVideoPreviewLayer?
     var qrCodeFrameView : UIView?
     
+    var fromPay: Bool = false
+    
     private let supportedCodeTypes = [AVMetadataObject.ObjectType.qr]
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var scanStationLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,8 +32,8 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Change
-        //loadData()
+        
+        scanStationLabel.isHidden = !fromPay
         
         // Do any additional setup after loading the view.
         var deviceDiscoverySession : AVCaptureDevice.DiscoverySession
@@ -79,6 +82,7 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         // Move the message label and top bar to the front
         view.bringSubview(toFront: messageLabel)
+        view.bringSubview(toFront: scanStationLabel)
         
         // Initialize QR Code Frame to highlight the QR code
         qrCodeFrameView = UIView()
@@ -138,6 +142,7 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 //    }
     
     var segueFlag = false
+    var segueToCheckoutStationFlag = false
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -157,15 +162,22 @@ class ZephyrViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
-                if messageLabel.text == store.Products[messageLabel.text!]?.initName
+                // if the store product dict has the QRCode as a key.
+                if store.Products[messageLabel.text!] != nil
                 {
                     store.productToAdd = store.Products[messageLabel.text!]!
                     segueFlag = true
+                } else if messageLabel.text == nil || messageLabel.text!.starts(with: "Checkout Station") {
+                    store.checkoutStation = messageLabel.text
+                    segueToCheckoutStationFlag = true
                 }
             }
         }
         if segueFlag {
             performSegue(withIdentifier: "GoToConfirmation", sender: self)
+            captureSession.stopRunning()
+        } else if segueToCheckoutStationFlag {
+            performSegue(withIdentifier: "GoToCheckoutStationSegue", sender: self)
             captureSession.stopRunning()
         }
     }

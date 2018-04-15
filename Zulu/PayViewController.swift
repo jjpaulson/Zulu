@@ -40,21 +40,6 @@ class PayViewController: UIViewController {
         
     }
     
-//    override func didMove(toParentViewController parent: UIViewController?) {
-//        // Happens when you are going back from Pay view one idk why
-//        print("TEST")
-//        print(parent)
-//        guard let test = parent as? ReceiptViewController else {
-//            print("Not Receipt")
-//            return
-//        }
-//
-//        print(test)
-//        if parent == nil {
-//            //self.performSegue(withIdentifier: "ReceiptToHomeSegue", sender: nil)
-//        }
-//    }
-    
     @IBAction func purchaseButtonPressed(_ sender: Any) {
         // Go to next view if all input has been filled in
         let firstLastNameString: String? = firstLastNameField.text

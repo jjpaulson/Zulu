@@ -25,6 +25,12 @@ class CartOverViewController: UIViewController {
         (self.childViewControllers[0] as! VirtualCartTableViewController).test = self
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.destination is ZephyrViewController {
+            (segue.destination as! ZephyrViewController).fromPay = true
+        }
+    }
 
     func totalCostOfItems() -> Float {
         var totalPrice : Float = 0.0
@@ -33,10 +39,6 @@ class CartOverViewController: UIViewController {
             totalPrice += (Item.key.initPrice) * Float(Item.value)
         }
         return totalPrice
-    }
-    
-    @IBAction func payButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "toPaySegue", sender: sender)
     }
     
     @IBAction func update(_ sender: AnyObject)

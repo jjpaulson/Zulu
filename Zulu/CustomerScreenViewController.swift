@@ -16,6 +16,7 @@ class CustomerScreenViewController: UIViewController {
     @IBOutlet weak var ZephyrButton: UIButton!
     @IBOutlet weak var PastPurchasesButton: UIButton!
     @IBOutlet weak var SearchButton: UIButton!
+    @IBOutlet weak var ShoppingListButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,18 @@ class CustomerScreenViewController: UIViewController {
         SearchButton.layer.cornerRadius = 10
         SearchButton.clipsToBounds = true
         
+        ShoppingListButton.layer.cornerRadius = 10
+        ShoppingListButton.clipsToBounds = true
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.destination is ItemSearchOverviewController {
+            (segue.destination as! ItemSearchOverviewController).selectGroceryItems = false
+        } else if segue.destination is ZephyrViewController {
+            (segue.destination as! ZephyrViewController).fromPay = false
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,7 +62,7 @@ class CustomerScreenViewController: UIViewController {
         print("Segue")
         performSegue(withIdentifier: "Checkout", sender: nil)
     }
-    
+
     /*
     // MARK: - Navigation
 

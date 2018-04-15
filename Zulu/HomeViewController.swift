@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.black;
         loadData()
         loadTestData()
+        store.loadGroceryList()
         
         CustomerButton.layer.cornerRadius = 10
         CustomerButton.clipsToBounds = true
