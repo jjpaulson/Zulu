@@ -13,6 +13,7 @@ class CustomerReceiptOverviewController: UIViewController {
     
     var store = DataStore.sharedInstance
     @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var confirmButton: UIButton!
     
     //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     //        print( segue.identifier ?? "Something" )
@@ -21,6 +22,9 @@ class CustomerReceiptOverviewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTotalPrice()
+        
+        confirmButton.layer.cornerRadius = 10
+        confirmButton.clipsToBounds = true
     }
     
     func totalCostOfItems() -> Float {
