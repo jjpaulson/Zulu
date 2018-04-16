@@ -35,6 +35,7 @@
 		BA68F8202063508B004CF7A0 /* ZuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F81F2063508B004CF7A0 /* ZuluTests.swift */; };
 		BA68F82B2063508B004CF7A0 /* ZuluUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F82A2063508B004CF7A0 /* ZuluUITests.swift */; };
 		BAB645C920640A9B0007D190 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB645C820640A9B0007D190 /* SignInViewController.swift */; };
+		F028C259208437D600B3307E /* StoreStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028C258208437D600B3307E /* StoreStatsViewController.swift */; };
 		F03C1EA9206FF1210026B634 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */; };
 		F03C1EAB207080380026B634 /* CartOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C1EAA207080380026B634 /* CartOverViewController.swift */; };
 		F052C8D32082A62B000931A2 /* GroceryListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052C8D22082A62A000931A2 /* GroceryListItemTableViewCell.swift */; };
@@ -116,6 +117,7 @@
 		C8DBED376FCB71B2B7F69F67 /* Pods_ZuluUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZuluUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65273DF0EA2CF09E70D2B59 /* Pods-Zulu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.debug.xcconfig"; sourceTree = "<group>"; };
 		DE806D784A8FD714D39D844C /* Pods-Zulu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zulu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zulu/Pods-Zulu.release.xcconfig"; sourceTree = "<group>"; };
+		F028C258208437D600B3307E /* StoreStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreStatsViewController.swift; sourceTree = "<group>"; };
 		F03C1EA8206FF1210026B634 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F03C1EAA207080380026B634 /* CartOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartOverViewController.swift; sourceTree = "<group>"; };
 		F052C8D22082A62A000931A2 /* GroceryListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				F09541B820771C490073379B /* CustomerReceiptOverviewController.swift */,
 				F09541BA20771C8F0073379B /* CustomerReceiptTableViewController.swift */,
 				F09541BC20771E050073379B /* CustomerReceiptCell.swift */,
+				F028C258208437D600B3307E /* StoreStatsViewController.swift */,
 			);
 			path = AdminControllers;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				F052C8D32082A62B000931A2 /* GroceryListItemTableViewCell.swift in Sources */,
 				BA68F80D2063508A004CF7A0 /* ViewController.swift in Sources */,
 				F09541B52076DBB10073379B /* InventoryTableViewController.swift in Sources */,
+				F028C259208437D600B3307E /* StoreStatsViewController.swift in Sources */,
 				BA68F80B2063508A004CF7A0 /* AppDelegate.swift in Sources */,
 				BA5390B520657880007713E2 /* ProductTableViewCell.swift in Sources */,
 				BA457F54207470800036FBEA /* SearchInventoryViewController.swift in Sources */,
