@@ -947,7 +947,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-Dd-FpN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                                 <connections>
                                     <segue destination="bGJ-hM-tWd" kind="embed" id="Wx6-mp-Jvn"/>
                                 </connections>
@@ -1628,7 +1628,7 @@
             <objects>
                 <tableViewController id="bGJ-hM-tWd" customClass="InventoryTableViewController" customModule="Zulu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="U9d-RW-j0H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="583"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.33597414920000002" green="0.74767132319999996" blue="0.77829552660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1708,7 +1708,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-ji-rDD">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
                                 <connections>
                                     <segue destination="cuS-o9-qLf" kind="show" id="5pB-JE-MFg"/>
                                 </connections>
@@ -1744,13 +1744,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-88-ROP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="543"/>
                                 <connections>
                                     <segue destination="k0D-R6-6gL" kind="embed" id="2zQ-cx-wSg"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUQ-Nb-kOX">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="563" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtotal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIQ-oS-wdm">
                                         <rect key="frame" x="8" y="20" width="77" height="21"/>
@@ -1802,7 +1802,7 @@
             <objects>
                 <tableViewController id="k0D-R6-6gL" customClass="CustomerReceiptTableViewController" customModule="Zulu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="RMw-DZ-Pmv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="523"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="479"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.33597414920000002" green="0.74767132319999996" blue="0.77829552660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
