@@ -17,7 +17,7 @@ class SearchLocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let initialLocation = CLLocation(latitude: 41.262437, longitude: -95.92824)
+        let initialLocation = CLLocation(latitude: 41.259141, longitude: -96.0171409)
         
         let regionRadius: CLLocationDistance = 1000
         func centerMapOnLocation(location: CLLocation) {
@@ -28,6 +28,11 @@ class SearchLocationViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
         // Do any additional setup after loading the view.
+        let annotation = MKPointAnnotation()
+        annotation.title = "Thompson Center"
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 41.259141, longitude: -96.0171409)
+        mapView.addAnnotation(annotation)
+        
     }
 
     override func didReceiveMemoryWarning() {

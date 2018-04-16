@@ -29,10 +29,10 @@ class PayViewController: UIViewController {
         super.viewDidLoad()
         let totalPriceString = String.localizedStringWithFormat("%.2f", totalCostOfItems())
         subtotalLabel.text = "Subtotal: $" + totalPriceString
-        firstLastNameField.text = "Jonathan Paulson"
-        addressField.text = "604 E Armory Ave"
-        cityStateField.text = "Champaign, IL"
-        zipCodeField.text = "61820"
+        firstLastNameField.text = "Jane Doe"
+        addressField.text = "123 East Street St."
+        cityStateField.text = "Omaha, NE"
+        zipCodeField.text = "68182"
         cardNumberField.text = "123456789"
         
         purchaseButton.layer.cornerRadius = 10
